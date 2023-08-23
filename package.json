@@ -1,23 +1,23 @@
 {
-  "name": "json-minifier",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "minify": "node ./utils/json-minifier.js --input=./prompts.json --output=./dist"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/KudoAI/chat-prompts.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/KudoAI/chat-prompts/issues"
-  },
-  "homepage": "https://github.com/KudoAI/chat-prompts#readme",
-  "dependencies": {
-    "minimist": "^1.2.8"
-  }
+    "name": "json-minifier",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "minify": "node ./utils/json-minifier.js --input=./prompts.json --output=./dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/KudoAI/chat-prompts.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/KudoAI/chat-prompts/issues"
+    },
+    "homepage": "https://github.com/KudoAI/chat-prompts#readme",
+    "dependencies": {
+        "minimist": "^1.2.8"
+    }
 }
