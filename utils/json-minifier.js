@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const minimist = require('minimist');
 
-const args = minimist(process.argv.slice(2));
+const args = minimist(process.argv);
 
 if (!args.input || !args.output) {
     console.log(`Usage: node ${path.basename(__filename)} --input=inputFile.json --output=outputDirectory`);
@@ -16,8 +16,7 @@ fs.readFile(inputFilePath, 'utf8', (err, data) => {
     if (err) return console.error(err);
 
     try {
-        const jsonData = JSON.parse(data);
-        const minifiedJson = JSON.stringify(jsonData);
+        const minifiedJson = JSON.stringify(JSON.parse(data));
 
         const inputFileName = path.basename(inputFilePath, '.json');
         const outputFileName = `${inputFileName}.min.json`;
@@ -28,6 +27,6 @@ fs.readFile(inputFilePath, 'utf8', (err, data) => {
             else console.log('JSON data minified and saved as', outputFileName);
         });
     } catch (err) {
-        console.error('Error parsing JSON:', err);
+        console.error(err);
     }
 });
