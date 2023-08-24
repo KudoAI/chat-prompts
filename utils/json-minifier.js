@@ -12,6 +12,11 @@ if (!args.input || !args.output) {
 const inputFilePath = args.input;
 const outputDirectory = args.output;
 
+if (path.extname(inputFilePath) !== '.json') {
+    console.error('Invalid input file type. \n\nValid: .json\nReceived: ' + path.extname(inputFilePath));
+    process.exit(1);
+}
+
 fs.readFile(inputFilePath, 'utf8', (err, data) => {
     if (err) return console.error(err);
 
