@@ -1,6 +1,6 @@
-# 💬 kudoai/chat-prompts
+# ⚡ kudoai/chat-prompts
 
-Prompts to turbo-charge your LLM chatbots.
+Epic prompts to turbo-charge your LLM chatbots.
 
 ## 💻 Usage
 
