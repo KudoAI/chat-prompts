@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "minify": "node ./utils/json-minifier.js --input=./prompts.json --output=./dist"
+        "minify": "node ./utils/json-minifier.js --input=./personas.json --output=./dist"
     },
     "repository": {
         "type": "git",
