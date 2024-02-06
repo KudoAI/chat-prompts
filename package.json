@@ -2,7 +2,7 @@
     "name": "chat-prompts",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "personas.json",
     "scripts": {
         "minify": "node ./utils/json-minifier.js --input=./personas.json --output=./dist"
     },
