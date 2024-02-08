@@ -9,8 +9,7 @@
     "lint:all": "eslint . --ext js,json",
     "lint:fix": "eslint . --ext js,json --fix --cache",
     "lint:fix-all": "eslint . --ext js,json --fix",
-    "minify": "node ./utils/json-minifier.js --input=./personas.json --output=./dist",
-    "prepare": "husky"
+    "minify": "node ./utils/json-minifier.js --input=./personas.json --output=./dist"
   },
   "repository": {
     "type": "git",
