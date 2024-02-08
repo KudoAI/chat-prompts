@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "author": "KudoAI",
   "homepage": "https://github.com/KudoAI/chat-prompts",
+  "license": "CC0 1.0",
   "main": "personas.json",
   "scripts": {
     "lint": "eslint . --ext js,json --cache",
@@ -15,7 +16,6 @@
     "type": "git",
     "url": "git+https://github.com/KudoAI/chat-prompts.git"
   },
-  "license": "CC0 1.0",
   "bugs": {
     "url": "https://github.com/KudoAI/chat-prompts/issues"
   },
