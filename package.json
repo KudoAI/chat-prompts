@@ -2,6 +2,7 @@
   "name": "chat-prompts",
   "version": "1.0.0",
   "author": "KudoAI",
+  "homepage": "https://github.com/KudoAI/chat-prompts",
   "main": "personas.json",
   "scripts": {
     "lint": "eslint . --ext js,json --cache",
@@ -19,7 +20,6 @@
   "bugs": {
     "url": "https://github.com/KudoAI/chat-prompts/issues"
   },
-  "homepage": "https://github.com/KudoAI/chat-prompts#readme",
   "devDependencies": {
     "eslint": "^8.56.0",
     "eslint-plugin-json-schema-validator": "^4.8.3",
