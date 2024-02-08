@@ -4,7 +4,7 @@
   "author": "KudoAI",
   "main": "personas.json",
   "scripts": {
-    "lint": "eslint . --ext js,json",
+    "lint": "eslint . --ext js,json --cache",
     "minify": "node ./utils/json-minifier.js --input=./personas.json --output=./dist",
     "prepare": "husky"
   },
