@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // Import libs
 const fs = require('fs'),
       path = require('path'),
