@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "eslint": "^9.8.0",
-    "eslint-plugin-json": "^4.0.0",
+    "eslint-plugin-json": "^4.0.1",
     "husky": "^9.1.4",
     "minimist": "^1.2.8"
   }
