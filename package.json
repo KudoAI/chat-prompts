@@ -20,7 +20,7 @@
     "url": "https://github.com/KudoAI/chat-prompts/issues"
   },
   "devDependencies": {
-    "eslint": "^9.9.1",
+    "eslint": "^9.10.0",
     "eslint-plugin-json": "^4.0.1",
     "husky": "^9.1.5",
     "minimist": "^1.2.8"
