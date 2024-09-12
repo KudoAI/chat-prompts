@@ -22,7 +22,7 @@
   "devDependencies": {
     "eslint": "^9.10.0",
     "eslint-plugin-json": "^4.0.1",
-    "husky": "^9.1.5",
+    "husky": "^9.1.6",
     "minimist": "^1.2.8"
   }
 }
