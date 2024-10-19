@@ -1,7 +1,11 @@
 {
   "name": "chat-prompts",
   "version": "1.0.0",
-  "author": "KudoAI",
+  "author": {
+    "name": "KudoAI & contributors",
+    "email": "opensource@kudoai.com",
+    "url": "https://www.kudoai.com"
+  },
   "homepage": "https://github.com/KudoAI/chat-prompts",
   "license": "CC0 1.0",
   "funding": "http://github.com/sponsors/KudoAI",
