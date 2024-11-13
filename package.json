@@ -8,7 +8,10 @@
   },
   "homepage": "https://github.com/KudoAI/chat-prompts",
   "license": "CC0 1.0",
-  "funding": "http://github.com/sponsors/KudoAI",
+  "funding": {
+    "type": "github",
+    "url": "http://github.com/sponsors/KudoAI"
+  },
   "main": "personas.json",
   "scripts": {
     "lint": "eslint . --cache",
