@@ -29,7 +29,7 @@
     "url": "https://github.com/KudoAI/chat-prompts/issues"
   },
   "devDependencies": {
-    "@eslint/json": "^0.9.0",
+    "@eslint/json": "^0.9.1",
     "@eslint/markdown": "^6.2.1",
     "@stylistic/eslint-plugin-js": "^2.13.0",
     "eslint": "^9.18.0",
