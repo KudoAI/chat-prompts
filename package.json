@@ -8,10 +8,10 @@
   },
   "homepage": "https://github.com/KudoAI/chat-prompts",
   "license": "CC0 1.0",
-  "funding": {
-    "type": "github",
-    "url": "http://github.com/sponsors/KudoAI"
-  },
+  "funding": [
+    { "type": "github", "url": "http://github.com/sponsors/KudoAI" },
+    { "type": "paypal", "url": "http://paypal.biz/kudoai" }
+  ],
   "main": "personas.json",
   "scripts": {
     "prepare": "husky",
