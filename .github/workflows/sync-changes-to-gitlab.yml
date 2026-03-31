@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    if: (github.repository == 'KudoAI/chat-prompts')
+    if: (github.repository == 'KudoAI/ai-personas')
     runs-on: ubuntu-24.04
     permissions:
       contents: read
@@ -15,14 +15,14 @@ jobs:
 
     steps:
 
-      - name: Checkout KudoAI/chat-prompts
+      - name: Checkout KudoAI/ai-personas
         uses: actions/checkout@v6.0.2
         with:
           fetch-depth: 0
 
-      - name: Push changes to gitlab.com/kudoai/chat-prompts
+      - name: Push changes to gitlab.com/kudoai/ai-personas
         env:
           GITLAB_SYNC_PAT: ${{ secrets.GITLAB_SYNC_PAT }}
         run: |
           git push --force -o ci.skip \
-            https://oauth2:$GITLAB_SYNC_PAT@gitlab.com/kudoai/chat-prompts.git main
+            https://oauth2:$GITLAB_SYNC_PAT@gitlab.com/kudoai/ai-personas.git main

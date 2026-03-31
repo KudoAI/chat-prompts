@@ -1,12 +1,12 @@
 {
-  "name": "chat-prompts",
+  "name": "ai-personas",
   "version": "1.0.0",
   "author": {
     "name": "KudoAI & contributors",
     "email": "opensource@kudoai.com",
     "url": "https://www.kudoai.com"
   },
-  "homepage": "https://github.com/KudoAI/chat-prompts",
+  "homepage": "https://github.com/KudoAI/ai-personas",
   "license": "CC0 1.0",
   "funding": [
     { "type": "github", "url": "http://github.com/sponsors/KudoAI" },
@@ -22,10 +22,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KudoAI/chat-prompts.git"
+    "url": "git+https://github.com/KudoAI/ai-personas.git"
   },
   "bugs": {
-    "url": "https://github.com/KudoAI/chat-prompts/issues"
+    "url": "https://github.com/KudoAI/ai-personas/issues"
   },
   "devDependencies": {
     "@eslint/json": "^1.2.0",
