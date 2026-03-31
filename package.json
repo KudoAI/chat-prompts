@@ -18,8 +18,7 @@
     "lint": "eslint . --cache",
     "lint:all": "eslint .",
     "lint:fix": "eslint . --fix --cache",
-    "lint:fix-all": "eslint . --fix",
-    "minify": "node ./utils/json-minifier.js --input=./personas.json --output=./dist"
+    "lint:fix-all": "eslint . --fix"
   },
   "repository": {
     "type": "git",
