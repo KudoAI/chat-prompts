@@ -12,7 +12,7 @@
     { "type": "github", "url": "http://github.com/sponsors/KudoAI" },
     { "type": "paypal", "url": "http://paypal.biz/kudoai" }
   ],
-  "main": "personas.json",
+  "main": "ai-personas.json",
   "scripts": {
     "prepare": "husky",
     "lint": "eslint . --cache",
