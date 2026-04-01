@@ -1,0 +1,16 @@
+[lint]
+select = [
+    "E",    # enforce all pycodestyle error-level rules
+    "F",    # enforce all Pyflakes rules (logic)
+    "W"     # enforce all pycodestyle warning-level rules
+]
+ignore = [  # https://docs.astral.sh/ruff/rules/
+    "E401", # allow multiple imports on one line
+    "E402", # allow module level import at top of file
+    "E701", # allow multiple statements on one line (colon)
+    "E702", # allow multiple statements on one line (semicolon)
+    "E722"  # allow bare exceptions
+]
+
+[lint.pycodestyle]
+max-line-length = 120

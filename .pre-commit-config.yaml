@@ -1,0 +1,40 @@
+repos:
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks: # https://github.com/pre-commit/pre-commit-hooks/#hooks-available
+      - id: check-json
+      - id: check-toml
+        files: \.toml$
+      - id: double-quote-string-fixer
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  - repo: https://github.com/jackdewinter/pymarkdown
+    rev: v0.9.35
+    hooks:
+      - id: pymarkdown
+        args: [ # https://pymarkdown.readthedocs.io/en/latest/rules/
+          # heading-increment, line-length, single-h1, no-trailing-punctuation, ol-prefix, no-inline-html, first-line-h1
+          --disable, "md001,md013,md025,md026,md029,md033,md041", scan
+        ]
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.15.8
+    hooks:
+      - id: ruff
+
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.38.0
+    hooks:
+      - id: yamllint
+        args: # https://yamllint.readthedocs.io/en/stable/rules.html
+          - --config-data
+          - |
+            extends: default
+            rules:
+              comments: disable
+              document-start: disable
+              truthy: disable
+              line-length:
+                max: 120
