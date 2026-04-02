@@ -16,3 +16,5 @@ def lint_all(session): # all files
 
 @session
 def alphabetize(session, *args) : session.run(py_cmd, '-m', 'utils.alphabetize-personas', *args)
+@session
+def update(session, *args) : session.run(py_cmd, '-m', 'utils.update.from-prompts-csv', *args)
