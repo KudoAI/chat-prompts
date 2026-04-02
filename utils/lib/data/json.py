@@ -31,7 +31,7 @@ def read(input: Union[Path, str], encoding: str = 'utf-8') -> Any:
     input_str = str(input)
     if input_str.endswith(('.json', '.json5')):
         with open(input_str, 'r', encoding=encoding) as file:
-           return json5.load(file)
+           return (json5 if input_str.endswith('.json5') else json).load(file)
     else : return json5.loads(input_str)
 
 def write(file_path: Union[Path, str], data: Any, encoding: str = 'utf-8', ensure_ascii: bool = False,
