@@ -15,4 +15,4 @@ def lint_all(session): # all files
     session.run('pre-commit', 'run', '--all-files', *session.posargs)
 
 @session
-def alphabetize(session, *args) : session.run(py_cmd, 'utils/alphabetize-personas.py', *args)
+def alphabetize(session, *args) : session.run(py_cmd, '-m', 'utils.alphabetize-personas', *args)
