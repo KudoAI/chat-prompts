@@ -12,6 +12,6 @@ await chatgpt.actAs(persona)
 
 ## 📜 License
 
-The prompts are governed by the [Creative Commons Zero v1.0 Universal license](https://github.com/KudoAI/ai-personas/blob/main/docs/LICENSE.md) under the following conditions:
+The prompts are governed by the [Creative Commons Zero v1.0 Universal license](https://github.com/KudoAI/ai-personas/blob/main/data/LICENSE.md) under the following conditions:
 
 > ![image](https://github.com/KudoAI/ai-personas/assets/10906554/77e92ea1-dab0-4592-aa02-5d3cad1afe83)
