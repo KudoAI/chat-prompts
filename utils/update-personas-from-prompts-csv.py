@@ -2,7 +2,7 @@ import csv, io, re
 from pathlib import Path
 from urllib.request import urlopen
 
-from .lib import data, log
+from .lib import data, log, prompt
 
 prompts_csv_url = 'https://huggingface.co/datasets/fka/prompts.chat/raw/main/prompts.csv'
 output_path = Path(__file__).parent.parent.parent / 'data/ai-personas.json'
@@ -15,7 +15,10 @@ with urlopen(prompts_csv_url) as resp:
 log.success(f'{len(prompt_rows):,} prompts downloaded!')
 
 log.info('Filtering in text prompts...')
-text_prompt_rows = [row for row in prompt_rows if row.get('type') == 'TEXT']
+text_prompt_rows = [
+    row for row in prompt_rows if row.get('type') == 'TEXT'
+        and not prompt.looks_like_img_type(row.get('prompt', ''))
+]
 log.success(f'{len(text_prompt_rows):,} text prompts found!')
 
 log.info(f'Reading {output_path}...')
