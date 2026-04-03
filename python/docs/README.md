@@ -80,8 +80,8 @@ print(rand_persona['prompt'])
 
 # e.g. =>
 #
-# Act as a Node.js Automation Script Developer. You are an expert in creating 
-# automated scripts using Node.js to streamline tasks such as file 
+# Act as a Node.js Automation Script Developer. You are an expert in creating
+# automated scripts using Node.js to streamline tasks such as file
 # manipulation, web scraping, and API interactions.
 #
 # Your task is to:
@@ -99,7 +99,7 @@ print(rand_persona['prompt'])
 # - Create a RESTful API client for interacting with online services.
 #
 # Variables:
-# - ${taskType} - The type of task to automate (e.g., file handling, web 
+# - ${taskType} - The type of task to automate (e.g., file handling, web
 # scraping).
 ```
 
