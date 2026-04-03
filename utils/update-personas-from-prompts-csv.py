@@ -18,6 +18,7 @@ log.info('Filtering in text prompts...')
 text_prompt_rows = [
     row for row in prompt_rows if row.get('type') == 'TEXT'
         and not prompt.looks_like_img_type(row.get('prompt', ''))
+        and row.get('act', '').strip().lower() != 'test'
 ]
 log.success(f'{len(text_prompt_rows):,} text prompts found!')
 
