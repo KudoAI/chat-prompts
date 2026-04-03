@@ -26,8 +26,7 @@ log.info('Adding new personas...')
 added_cnt = 0
 for row in text_prompt_rows:
     role = re.sub(r'^# |["“”‘’]', '', row['act']).strip()
-    prompt = row['prompt'].strip()
-    persona = {'prompt': prompt}
+    persona = {'prompt': row['prompt'].strip()}
     if row.get('for_devs', '').strip().upper() == 'TRUE':
         persona['targetAudience'] = ['devs']
     if role not in personas:
