@@ -2,7 +2,7 @@ import csv, io, re
 from pathlib import Path
 from urllib.request import urlopen
 
-from ..lib import data, log
+from .lib import data, log
 
 prompts_csv_url = 'https://huggingface.co/datasets/fka/prompts.chat/raw/main/prompts.csv'
 output_path = Path(__file__).parent.parent.parent / 'data/ai-personas.json'
