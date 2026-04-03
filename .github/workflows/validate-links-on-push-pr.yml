@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v6.0.2
-      - uses: JustinBeckwith/linkinator-action@v2.4.0
+      - uses: JustinBeckwith/linkinator-action@v2.4.1
         with:
           paths: '**/*.md'
           checkFragments: true
