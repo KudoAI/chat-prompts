@@ -20,4 +20,5 @@ jobs:
       - uses: JustinBeckwith/linkinator-action@v2.4.0
         with:
           paths: '**/*.md'
+          checkFragments: true
           statusCodes: '{ "429": "skip" }'
