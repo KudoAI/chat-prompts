@@ -1,0 +1,36 @@
+{
+  "bump": {
+    "app_DESC": { "message": "Bump versions in pyproject.toml + README.md" },
+    "help_MAJOR": { "message": "Bump the major (\\033[1mx\\033[0m.y.z) version" },
+    "help_MINOR": { "message": "Bump the minor (x.\\033[1my\\033[0m.z) version" },
+    "help_PATCH": { "message": "Bump the patch (x.y.\\033[1mz\\033[0m) version" },
+    "help_NO_COMMIT": { "message": "Skip Git commit" },
+    "help_NO_PUSH": { "message": "Skip Git push" },
+    "help_HELP": { "message": "Show help screen" },
+    "err_MISSING_BUMP_TYPE_ARG": { "message": "You must pass --<major|minor|patch> as an argument" },
+    "err_GIT_CMD_FAILED": { "message": "Git command failed" },
+    "warn_GIT_CONFIG_BACKUP_NOT_FOUND": { "message": "No git config backup found" },
+    "log_LOADING_PYPROJECT": { "message": "Loading {pyproject_path}" },
+    "log_BUMPED_PROJECT_VER": { "message": "Bumped project.version in pyproject.toml from [{prev_ver}] to [{new_ver}]" },
+    "log_GENERATED_CLOG_URL": { "message": "Generated Changelog URL" },
+    "log_UPDATING_CLOG_URL_IN": { "message": "Updating Changelog URL in" },
+    "log_BUMPED_CLOG_URL_VER_TAG": { "message": "Bumped Changelog URL version tag to [{new_ver_tag}]" },
+    "log_BUMPING_VER_IN": { "message": "Bumping version in" },
+    "log_BUMPED_PACKAGE_DATA_VER": { "message": "Bumped version in package_data.json from [{prev_ver}] to [{new_ver}]!" },
+    "log_UPDATING_VERS_IN": { "message": "Updating versions in" },
+    "log_UPDATED_README_VERS": { "message": "Updated versions in README URLs to [{new_ver}]!" },
+    "log_SWITCHING_TO_KUDO_SYNC_BOT": { "message": "Switching Git committer to kudo-sync-bot" },
+    "log_SKIPPING_GIT_COMMIT": { "message": "Skipping Git commit (--no-commit used)" },
+    "log_SKIPPING_GIT_PUSH": { "message": "Skipping Git push (--no-push used)" },
+    "log_COMMITTING_CHANGES": { "message": "Committing changes to Git" },
+    "log_PUSHING_CHANGES": { "message": "Pushing changes to Git" },
+    "log_PUSHED_ALL_COMMITS": { "message": "Pushed all commits to remote" },
+    "log_RESTORING_OG_GIT_CONFIG": { "message": "Restoring original Git config" },
+    "log_SUCCESS": { "message": "Success" },
+    "log_BUMPED_TO": { "message": "bumped to" }
+  },
+  "clean": {
+    "log_REMOVED": { "message": "Removed" },
+    "log_CLEAN_COMPLETE": { "message": "Clean complete" }
+  }
+}

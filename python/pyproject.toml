@@ -1,0 +1,112 @@
+[build-system]
+requires = [
+    "setuptools>=82.0.0,<83",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-personas"
+version = "1.0.0"
+description = "1,000+ AI personas for LLMs and agents."
+authors = [
+    { name = "KudoAI", email = "contact@kudoai.com" },
+]
+maintainers = [
+    { name = "Adam Lui", email = "adam@kudoai.com" },
+]
+readme = "docs/README.md"
+license = "MIT"
+license-files = [
+    "docs/licenses/*",
+]
+requires-python = ">=2.6,<4"
+keywords = [
+    "agents",
+    "ai",
+    "ai-personas",
+    "chat-prompts",
+    "chatgpt",
+    "claude",
+    "dataset",
+    "gemini",
+    "gen-ai",
+    "llm",
+    "llm-prompts",
+    "personas",
+    "prompt-engineering",
+    "prompts",
+    "system-prompts",
+    "text-generation",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Customer Service",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Healthcare Industry",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Legal Industry",
+    "Intended Audience :: Manufacturing",
+    "Intended Audience :: Other Audience",
+    "Intended Audience :: Religion",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: System Administrators",
+    "Intended Audience :: Telecommunications Industry",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.6",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
+    "Topic :: Education",
+    "Topic :: Education :: Computer Aided Instruction (CAI)",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing",
+    "Topic :: Text Processing :: General",
+    "Topic :: Text Processing :: Linguistic",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Changelog = "https://github.com/KudoAI/ai-personas/releases/tag/ai-personas-python-1.0.0"
+Documentation = "https://github.com/KudoAI/ai-personas/tree/main/python/#readme"
+Funding = "https://github.com/sponsors/KudoAI"
+Homepage = "https://github.com/KudoAI/ai-personas/#readme"
+Issues = "https://github.com/KudoAI/ai-personas/issues"
+"PyPI Stats" = "https://pepy.tech/projects/ai-personas"
+Releases = "https://github.com/KudoAI/ai-personas/releases"
+Repository = "https://github.com/KudoAI/ai-personas"
+
+[project.optional-dependencies]
+dev = [
+    "nox>=2026.2.9",
+    "tomli>=2.4.0,<3",
+    "tomli-w>=1.2.0,<2",
+]
+
+[tool.setuptools.packages.find]
+where = [
+    "src",
+]
+
+[tool.setuptools.package-data]
+ai_personas = [
+    "ai-personas.json",
+]

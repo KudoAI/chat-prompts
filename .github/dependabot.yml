@@ -9,6 +9,7 @@ updates:
   - package-ecosystem: pip
     directories:
       - /
+      - /python
     schedule:
       interval: daily
     groups:
