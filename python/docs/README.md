@@ -2,7 +2,7 @@
 
 # > ai-personas
 
-<a href="https://github.com/KudoAI/ai-personas/releases/tag/ai-personas-python-1.0.0">
+<a href="https://github.com/KudoAI/ai-personas/releases/tag/python-v1.0.0">
     <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.0-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/KudoAI/ai-personas/blob/main/python/docs/licenses/LICENSE-CODE.md">
     <img height=31 src="https://img.shields.io/badge/License-MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
@@ -13,7 +13,7 @@
 
 > ### _1,000+ AI personas for LLMs and agents._
 
-It's just a [JSON file](https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@ai-personas-python-1.0.0/data/ai-personas.json), so you can use it in any environment.
+It's just a [JSON file](https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@python-v1.0.0/data/ai-personas.json), so you can use it in any environment.
 
 ## Installation
 
