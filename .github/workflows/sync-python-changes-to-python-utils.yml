@@ -3,11 +3,11 @@ name: Sync python/ to adamlui/python-utils/ai-personas/
 on:
   push:
     branches: [main]
-    paths: ["python/**"]
+    paths: [python/**]
 
 jobs:
   build:
-    if: (github.repository == 'KudoAI/ai-personas') && !contains(github.event.head_commit.message, '[auto-sync]')
+    if: (github.repository == 'KudoAI/ai-personas') && !contains(github.event.head_commit.message, '[auto-sync')
     runs-on: ubuntu-24.04
     permissions:
       contents: read
