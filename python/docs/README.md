@@ -34,7 +34,7 @@ _Note: Most type checkers will falsely warn_ `ai_personas` _is not subscriptable
 
 ## Examples
 
-Search by keyword:
+##### Search by keyword:
 
 ```py
 keyword = 'coach'
@@ -53,7 +53,7 @@ for persona, data in ai_personas.items():
 # ...
 ```
 
-Get 6 random personas:
+##### Get 6 random personas:
 
 ```py
 import random
@@ -70,7 +70,7 @@ for persona in random.sample(list(ai_personas), 6):
 # China Business Law Assistant
 ```
 
-Get random prompt:
+##### Get random prompt:
 
 ```py
 import random
@@ -103,7 +103,7 @@ print(rand_persona['prompt'])
 # scraping).
 ```
 
-Fill variables in template prompts :
+##### Fill variables in template prompts:
 
 ```py
 prompt = ai_personas['Node.js Automation Script Developer']['prompt']
@@ -118,7 +118,7 @@ print(filled_prompt)
 # ...
 ```
 
-Combine prompts:
+##### Combine prompts:
 
 ```py
 import ai_personas
@@ -142,7 +142,7 @@ print(mega_prompt)
 # Prompt B: I want you to act as a DAX terminal...
 ```
 
-Build system prompt:
+##### Build system prompt:
 
 ```py
 system_prompt = ai_personas['Study Planner']['prompt']
