@@ -18,11 +18,11 @@ log.info('Filtering in text prompts...')
 seen_personas = set()
 text_prompt_rows = [
     row for row in prompt_rows
-    if row.get('type') == 'TEXT'
-       and not prompt.looks_like_img_type(row.get('prompt', ''))
-       and row.get('act', '').strip().lower() != 'test'
-       and (row_lower := row['act'].strip().lower()) not in seen_personas
-       and not seen_personas.add(row_lower)
+        if row.get('type') == 'TEXT'
+            and not prompt.looks_like_img_type(row.get('prompt', ''))
+            and row.get('act', '').strip().lower() != 'test'
+            and (row_lower := row['act'].strip().lower()) not in seen_personas
+            and not seen_personas.add(row_lower)
 ]
 log.success(f'{len(text_prompt_rows):,} text prompts found!')
 
