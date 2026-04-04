@@ -63,4 +63,3 @@ jobs:
             "$ESCAPED_MSG ↞ [auto-sync from https://github.com/KudoAI/ai-personas/tree/main/python]" || true
           git pull --rebase
           git push
-
