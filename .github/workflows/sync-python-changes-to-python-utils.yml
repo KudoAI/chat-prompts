@@ -58,6 +58,9 @@ jobs:
       - name: Push changes to adamlui/python-utils
         run: |
           cd ${{ github.workspace }}/adamlui/python-utils
-          git add . && git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from https://github.com/KudoAI/ai-personas/tree/main/python]" || true
+          git add .
+          git commit -n -m \
+            "$ESCAPED_MSG ↞ [auto-sync from https://github.com/KudoAI/ai-personas/tree/main/python]" || true
           git pull --rebase
           git push
+
