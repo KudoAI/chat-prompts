@@ -2,7 +2,7 @@ name: Sync releases to adamlui/python-utils
 
 on:
   release:
-    types: [published, edited, released]
+    types: [published, edited]
 
 jobs:
   sync-release:
@@ -48,7 +48,7 @@ jobs:
           fi
 
           # Append auto-sync trailer
-          RELEASE_NOTES+="\n\n###### _Auto-synced from https://github.com/KudoAI/ai-personas/releases"
+          RELEASE_NOTES+="\n###### _Auto-synced from https://github.com/KudoAI/ai-personas/releases"
           RELEASE_NOTES+=" by_ :robot: [kudo-sync-bot](https://github.com/kudo-sync-bot)"
 
           if [ "$RELEASE_EXISTS" = false ] ; then
