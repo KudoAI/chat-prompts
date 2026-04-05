@@ -152,7 +152,7 @@ system_prompt = ai_personas['Study Planner']['prompt']
 
 messages = [
     {'role': 'system', 'content': system_prompt},
-    {'role': 'user', 'content': '<your_query>'}
+    {'role': 'user', 'content': 'Create a weekly study plan for calculus'}
 ]
 ```
 
@@ -170,7 +170,7 @@ response = client.chat.completions.create(
     model='gpt-5.4',
     messages=[
         {'role': 'system', 'content': persona_prompt},
-        {'role': 'user', 'content': 'ls -la'} # list files
+        {'role': 'user', 'content': 'ls -la'} # list all files (incl. hidden)
     ]
 )
 
