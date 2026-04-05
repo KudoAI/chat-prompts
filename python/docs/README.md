@@ -175,6 +175,18 @@ response = client.chat.completions.create(
 )
 
 print(response.choices[0].message.content)
+
+# e.g. =>
+# total 48
+# drwxr-xr-x  8 user user 4096 Mar  4 12:10 .
+# drwxr-xr-x 20 user user 4096 Mar  4 11:58 ..
+# -rw-r--r--  1 user user  220 Mar  4 11:58 .bash_logout
+# -rw-r--r--  1 user user 3771 Mar  4 11:58 .bashrc
+# drwxr-xr-x  2 user user 4096 Mar  4 12:05 Desktop
+# drwxr-xr-x  2 user user 4096 Mar  4 12:05 Documents
+# drwxr-xr-x  2 user user 4096 Mar  4 12:05 Downloads
+# -rw-r--r--  1 user user  807 Mar  4 11:58 .profile
+...
 ```
 
 ## License
