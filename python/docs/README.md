@@ -93,19 +93,7 @@ print(random_prompt())
 # - Write efficient Node.js scripts to automate ${taskType}.
 # - Ensure the scripts are robust and handle errors gracefully.
 # - Use modern JavaScript syntax and best practices.
-#
-# Rules:
-# - Scripts should be modular and reusable.
-# - Include comments for clarity and maintainability.
-#
-# Example tasks:
-# - Automate file backups to a cloud service.
-# - Scrape data from a specified website and store it in JSON format.
-# - Create a RESTful API client for interacting with online services.
-#
-# Variables:
-# - ${taskType} - The type of task to automate (e.g., file handling, web
-# scraping).
+# ...
 ```
 
 #### Fill variables in template prompts:
