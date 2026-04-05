@@ -15,13 +15,13 @@
 
 It's just a [JSON file](https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@python-v1.0.0/data/ai-personas.json), so you can use it in any environment.
 
-## Installation
+## ⚡ Installation
 
 ```bash
 pip install ai-personas
 ```
 
-## Usage
+## 🔌 Usage
 
 ```py
 import ai_personas
@@ -32,7 +32,7 @@ print(ai_personas['Linux Terminal']['prompt'])
 
 _Note: Most type checkers will falsely warn_ `ai_personas` _is not subscriptable because they are incapable of analyzing runtime behavior (where the module is replaced w/ a dictionary for cleaner, direct access). You can safely suppress such warnings using_ `# type: ignore`.
 
-## Examples
+## 💻 Examples
 
 #### Find personas by keyword:
 
@@ -178,7 +178,7 @@ print(response.choices[0].message.content)
 # e.g. => UTC time: 15:23:42
 ```
 
-## License
+## 🏛️ License
 
 - Data: [CC0 1.0 Universal](https://github.com/KudoAI/ai-personas/blob/main/python/docs/licenses/LICENSE-DATA.md) (public domain)
 - Code: [MIT License](https://github.com/KudoAI/ai-personas/blob/main/python/docs/licenses/LICENSE-CODE.md) — © 2026 [KudoAI](https://www.kudoai.com) & contributors
