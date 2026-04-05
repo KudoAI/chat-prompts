@@ -165,12 +165,13 @@ from openai import OpenAI
 client = OpenAI()
 
 persona_prompt = ai_personas['Linux Terminal']['prompt']
+user_query = 'echo "UTC time: $(date -u +%H:%M:%S)"'
 
 response = client.chat.completions.create(
     model='gpt-5.4',
     messages=[
         {'role': 'system', 'content': persona_prompt},
-        {'role': 'user', 'content': 'echo "UTC time: $(date -u +%H:%M:%S)"'}
+        {'role': 'user', 'content': user_query}
     ]
 )
 
