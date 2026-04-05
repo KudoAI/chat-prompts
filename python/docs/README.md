@@ -177,8 +177,6 @@ response = client.chat.completions.create(
 print(response.choices[0].message.content)
 ```
 
-#### 
-
 ## License
 
 - Data: [CC0 1.0 Universal](https://github.com/KudoAI/ai-personas/blob/main/python/docs/licenses/LICENSE-DATA.md)
