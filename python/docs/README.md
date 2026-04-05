@@ -2,6 +2,8 @@
 
 # > ai-personas
 
+<a href="https://pepy.tech/projects/ai-personas?versions=*">
+    <img height=31 src="https://img.shields.io/pepy/dt/ai-personas?logo=weightsandbiases&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
 <a href="https://github.com/KudoAI/ai-personas/releases/tag/python-v1.0.0">
     <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.1-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-license">
