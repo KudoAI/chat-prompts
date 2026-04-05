@@ -180,8 +180,8 @@ print(response.choices[0].message.content)
 
 ## License
 
-- Data: [CC0 1.0 Universal](https://github.com/KudoAI/ai-personas/blob/main/python/docs/licenses/LICENSE-DATA.md)
-- Code: [MIT License](https://github.com/KudoAI/ai-personas/blob/main/python/docs/licenses/LICENSE-CODE.md) © 2026 [KudoAI](https://www.kudoai.com) & contributors
+- Data: [CC0 1.0 Universal](https://github.com/KudoAI/ai-personas/blob/main/python/docs/licenses/LICENSE-DATA.md) (public domain)
+- Code: [MIT License](https://github.com/KudoAI/ai-personas/blob/main/python/docs/licenses/LICENSE-CODE.md) — © 2026 [KudoAI](https://www.kudoai.com) & contributors
 
 #
 
