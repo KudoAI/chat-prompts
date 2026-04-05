@@ -170,23 +170,12 @@ response = client.chat.completions.create(
     model='gpt-5.4',
     messages=[
         {'role': 'system', 'content': persona_prompt},
-        {'role': 'user', 'content': 'ls -la'} # list all files (incl. hidden)
+        {'role': 'user', 'content': 'echo "UTC time: $(date -u +%H:%M:%S)"'}
     ]
 )
 
 print(response.choices[0].message.content)
-
-# e.g. =>
-# total 48
-# drwxr-xr-x  8 user user 4096 Mar  4 12:10 .
-# drwxr-xr-x 20 user user 4096 Mar  4 11:58 ..
-# -rw-r--r--  1 user user  220 Mar  4 11:58 .bash_logout
-# -rw-r--r--  1 user user 3771 Mar  4 11:58 .bashrc
-# drwxr-xr-x  2 user user 4096 Mar  4 12:05 Desktop
-# drwxr-xr-x  2 user user 4096 Mar  4 12:05 Documents
-# drwxr-xr-x  2 user user 4096 Mar  4 12:05 Downloads
-# -rw-r--r--  1 user user  807 Mar  4 11:58 .profile
-...
+# e.g. => UTC time: 15:23:42
 ```
 
 ## License
