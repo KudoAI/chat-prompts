@@ -4,7 +4,7 @@
 
 <a href="https://pepy.tech/projects/ai-personas?versions=*">
     <img height=31 src="https://img.shields.io/pepy/dt/ai-personas?logo=weightsandbiases&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></img></a>
-<a href="https://github.com/KudoAI/ai-personas/releases/tag/python-v1.0.0">
+<a href="https://github.com/KudoAI/ai-personas/releases/tag/python-v1.0.1">
     <img height=31 src="https://img.shields.io/badge/Latest_Build-1.0.1-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-license">
     <img height=31 src="https://img.shields.io/badge/License-CC0--1.0/MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
@@ -15,7 +15,7 @@
 
 > ### _1,000+ AI personas for LLMs and agents._
 
-It's just a [JSON file](https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@python-v1.0.0/data/ai-personas.json), so you can use it in any environment.
+It's just a [JSON file](https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@python-v1.0.1/data/ai-personas.json), so you can use it in any environment.
 
 ## ⚡ Installation
 
