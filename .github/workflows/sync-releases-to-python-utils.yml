@@ -52,21 +52,31 @@ jobs:
           RELEASE_NOTES+=" by_ :robot: [kudo-sync-bot](https://github.com/kudo-sync-bot)"
 
           if [ "$RELEASE_EXISTS" = false ] ; then
-            echo "Creating release..."
-            curl -s -X POST \
-              -H "Authorization: token $REPO_SYNC_PAT" \
-              -H "Content-Type: application/json" \
-              -d "$(printf '{"tag_name":"%s","name":"%s","body":"%s"}' \
-              "$TARGET_RELEASE_TAG" "$TARGET_RELEASE_TITLE" "$RELEASE_NOTES")" \
-              https://api.github.com/repos/adamlui/python-utils/releases
+            echo "Creating new release..."
+            create_release_url="https://api.github.com/repos/adamlui/python-utils/releases"
+            create_release_payload=$(
+              printf '{"tag_name": "%s","name": "%s","body": "%s"}' \
+                "$TARGET_RELEASE_TAG" "$TARGET_RELEASE_TITLE" "$RELEASE_NOTES")
+            create_release_resp=$(
+              curl -s -S -X POST -H "Authorization: token $REPO_SYNC_PAT" \
+                   -H "Content-Type: application/json" -d "$create_release_payload" "$create_release_url")
+            upload_url=$(echo "$create_release_resp" | sed -nE 's|.*"upload_url": "(.*)".*|\1|p' | sed 's|{.*}||')
           else
-            echo "Updating release..."
-            curl -s -X PATCH \
-              -H "Authorization: token $REPO_SYNC_PAT" \
-              -H "Content-Type: application/json" \
-              -d "$(printf '{"name":"%s","body":"%s"}' \
-              "$TARGET_RELEASE_TITLE" "$RELEASE_NOTES")" \
-              https://api.github.com/repos/adamlui/python-utils/releases/$TARGET_RELEASE_ID
+            echo "Updating existing release..."
+            update_release_url="https://api.github.com/repos/adamlui/python-utils/releases/$TARGET_RELEASE_ID"
+            update_release_payload=$(
+              printf '{"name": "%s","body": "%s"}' \
+                "$TARGET_RELEASE_TITLE" "$RELEASE_NOTES")
+            patch_release_resp=$(
+              curl -s -S -X PATCH -H "Authorization: token $REPO_SYNC_PAT" \
+                   -H "Content-Type: application/json" -d "$update_release_payload" "$update_release_url")
+            if echo "$patch_release_resp" | grep -q '"message"' ; then
+              echo "ERROR: Failed to update release: $patch_release_resp"
+              exit 1
+            fi
+            get_release_resp=$(curl -s -S -H "Authorization: token $REPO_SYNC_PAT" \
+              "https://api.github.com/repos/adamlui/python-utils/releases/tags/$TARGET_RELEASE_TAG")
+            upload_url=$(echo "$get_release_resp" | sed -nE 's|.*"upload_url": "(.*)".*|\1|p' | sed 's|{.*}||')
           fi
 
           echo "Release synced to adamlui/python-utils ($TARGET_RELEASE_TAG)!"
