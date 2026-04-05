@@ -1,0 +1,72 @@
+name: Sync releases to adamlui/python-utils
+
+on:
+  release:
+    types: [published, edited, released]
+
+jobs:
+  sync-release:
+    name: Sync release to adamlui/python-utils
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    env:
+      REPO_SYNC_PAT: ${{ secrets.REPO_SYNC_PAT }}
+    steps:
+      - name: Sync release to adamlui/python-utils
+        run: |  
+          RELEASE_TITLE="${{ github.event.release.name }}"
+          RELEASE_TAG="${{ github.event.release.tag_name }}"
+          echo "Source Title: $RELEASE_TITLE"
+          echo "Source Tag: $RELEASE_TAG"
+
+          RELEASE_JSON=$(curl -s "https://api.github.com/repos/KudoAI/ai-personas/releases/tags/$RELEASE_TAG")
+          RELEASE_NOTES=$(echo "$RELEASE_JSON" | sed -nE 's/.*"body": "(.*)".*/\1/p')
+
+          if [[ "$RELEASE_NOTES" == *"Auto-synced from"* ]] ; then
+            echo "Release already auto-synced. Exiting..." ; exit 0 ; fi
+
+          # Convert emoji
+          RELEASE_NOTES=$(echo "$RELEASE_NOTES" | \
+            sed 's|📃|:page_with_curl:|g; s|🚀|:rocket:|g; s|🧠|:brain:|g; s|💻|:computer:|g')
+
+          TARGET_RELEASE_TITLE=$(echo "$RELEASE_TITLE" | sed -E 's/ \(Python\)//')
+          TARGET_RELEASE_TAG="ai-personas-$(echo "$RELEASE_TAG" | sed -E 's/^python-v([0-9.]+)$/\1/')"
+          echo "Target Title: $TARGET_RELEASE_TITLE"
+          echo "Target Tag: $TARGET_RELEASE_TAG"
+
+          # Check release exists in python-utils
+          RELEASE_CHECK_RESP=$(curl -s \
+            "https://api.github.com/repos/adamlui/python-utils/releases/tags/$TARGET_RELEASE_TAG")
+          TARGET_RELEASE_ID=$(echo "$RELEASE_CHECK_RESP" | sed -nE 's/.*"id":[[:space:]]*([0-9]+).*/\1/p' | head -1)
+          if [ -n "$TARGET_RELEASE_ID" ] ; then
+            RELEASE_EXISTS=true
+            echo "Release exists (ID: $TARGET_RELEASE_ID)"
+          else
+            RELEASE_EXISTS=false
+            echo "Release does not exist"
+          fi
+
+          # Append auto-sync trailer
+          RELEASE_NOTES+="\n\n###### _Auto-synced from https://github.com/KudoAI/ai-personas/releases"
+          RELEASE_NOTES+=" by_ :robot: [kudo-sync-bot](https://github.com/kudo-sync-bot)"
+
+          if [ "$RELEASE_EXISTS" = false ] ; then
+            echo "Creating release..."
+            curl -s -X POST \
+              -H "Authorization: token $REPO_SYNC_PAT" \
+              -H "Content-Type: application/json" \
+              -d "$(printf '{"tag_name":"%s","name":"%s","body":"%s"}' \
+              "$TARGET_RELEASE_TAG" "$TARGET_RELEASE_TITLE" "$RELEASE_NOTES")" \
+              https://api.github.com/repos/adamlui/python-utils/releases
+          else
+            echo "Updating release..."
+            curl -s -X PATCH \
+              -H "Authorization: token $REPO_SYNC_PAT" \
+              -H "Content-Type: application/json" \
+              -d "$(printf '{"name":"%s","body":"%s"}' \
+              "$TARGET_RELEASE_TITLE" "$RELEASE_NOTES")" \
+              https://api.github.com/repos/adamlui/python-utils/releases/$TARGET_RELEASE_ID
+          fi
+
+          echo "Release synced to adamlui/python-utils ($TARGET_RELEASE_TAG)!"
