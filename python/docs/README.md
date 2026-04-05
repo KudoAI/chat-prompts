@@ -34,7 +34,7 @@ _Note: Most type checkers will falsely warn_ `ai_personas` _is not subscriptable
 
 ## Examples
 
-##### Find personas by keyword:
+#### Find personas by keyword:
 
 ```py
 def find_personas(keyword):
@@ -47,7 +47,7 @@ print(find_personas('coach'))
 # => ['Interview Preparation Coach', 'Life Coach', ...]
 ```
 
-##### Get prompt for a persona:
+#### Get prompt for a persona:
 
 ```py
 def get_prompt(persona):
@@ -57,7 +57,7 @@ print(get_prompt('Food Critic'))
 # => I want you to act as a food critic. I will tell you about a restaurant...
 ```
 
-##### Get random personas:
+#### Get random personas:
 
 ```py
 def random_persona(qty=1):
@@ -72,7 +72,7 @@ print(random_persona(10))
 # => e.g. ['Internet Trend & Slang Intelligence', 'Tic-Tac-Toe Game', ...]
 ```
 
-##### Get random prompt:
+#### Get random prompt:
 
 ```py
 def random_prompt():
@@ -106,7 +106,7 @@ print(random_prompt())
 # scraping).
 ```
 
-##### Fill variables in template prompts:
+#### Fill variables in template prompts:
 
 ```py
 prompt = ai_personas['Node.js Automation Script Developer']['prompt']
@@ -121,7 +121,7 @@ print(filled_prompt)
 # ...
 ```
 
-##### Combine prompts:
+#### Combine prompts:
 
 ```py
 import ai_personas
@@ -145,7 +145,7 @@ print(mega_prompt)
 # Prompt B: I want you to act as a DAX terminal...
 ```
 
-##### Build system prompt:
+#### Build system prompt:
 
 ```py
 system_prompt = ai_personas['Study Planner']['prompt']
@@ -156,7 +156,7 @@ messages = [
 ]
 ```
 
-##### Use persona w/ an LLM:
+#### Use persona w/ an LLM:
 
 ```py
 import ai_personas
@@ -177,7 +177,7 @@ response = client.chat.completions.create(
 print(response.choices[0].message.content)
 ```
 
-##### 
+#### 
 
 ## License
 
