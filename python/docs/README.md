@@ -34,49 +34,52 @@ _Note: Most type checkers will falsely warn_ `ai_personas` _is not subscriptable
 
 ## Examples
 
-##### Search by keyword:
+##### Find personas by keyword:
 
 ```py
-keyword = 'coach'
+def find_personas(keyword):
+    return [
+        persona for persona, data in ai_personas.items()
+            if keyword.lower() in data['prompt'].lower()
+    ]
 
-for persona, data in ai_personas.items():
-    if keyword.lower() in data['prompt'].lower():
-        print(persona)
-# =>
-# ...
-# Interview Preparation Coach
-# Life Coach
-# Master Skills & Experience Summary Generator
-# Motivational Coach
-# Multilingual Writing Improvement Assistant
-# Pre-Interview Intelligence Dossier
-# ...
+print(find_personas('coach'))
+# => ['Interview Preparation Coach', 'Life Coach', ...]
 ```
 
-##### Get 6 random personas:
+##### Get prompt for a persona:
 
 ```py
-import random
+def get_prompt(persona):
+    return ai_personas[persona]['prompt']
 
-for persona in random.sample(list(ai_personas), 6):
-    print(persona)
+print(get_prompt('Food Critic'))
+# => I want you to act as a food critic. I will tell you about a restaurant...
+```
 
-# e.g. =>
-# Internet Trend & Slang Intelligence
-# Tic-Tac-Toe Game
-# Reverse Prompt Engineer
-# Study planner
-# Develop a Media Center Plan for Hajj
-# China Business Law Assistant
+##### Get random personas:
+
+```py
+def random_persona(qty=1):
+    import random
+    random_personas = random.sample(list(ai_personas), qty)
+    return random_personas[0] if qty == 1 else random_personas
+
+print(random_persona())
+# => e.g. Reverse Prompt Engineer
+
+print(random_persona(10))
+# => e.g. ['Internet Trend & Slang Intelligence', 'Tic-Tac-Toe Game', ...]
 ```
 
 ##### Get random prompt:
 
 ```py
-import random
+def random_prompt():
+    import random
+    return random.choice(list(ai_personas.values()))['prompt']
 
-rand_persona = random.choice(list(ai_personas.values()))
-print(rand_persona['prompt'])
+print(random_prompt())
 
 # e.g. =>
 #
@@ -152,6 +155,29 @@ messages = [
     {'role': 'user', 'content': '<your_query>'}
 ]
 ```
+
+##### Use persona w/ an LLM:
+
+```py
+import ai_personas
+from openai import OpenAI
+
+client = OpenAI()
+
+persona_prompt = ai_personas['Linux Terminal']['prompt']
+
+response = client.chat.completions.create(
+    model='gpt-5.4',
+    messages=[
+        {'role': 'system', 'content': persona_prompt},
+        {'role': 'user', 'content': 'ls -la'} # list files
+    ]
+)
+
+print(response.choices[0].message.content)
+```
+
+##### 
 
 ## License
 
