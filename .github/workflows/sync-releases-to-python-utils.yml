@@ -60,6 +60,10 @@ jobs:
             create_release_resp=$(
               curl -s -S -X POST -H "Authorization: token $REPO_SYNC_PAT" \
                    -H "Content-Type: application/json" -d "$create_release_payload" "$create_release_url")
+            if echo "$create_release_resp" | grep -q '"message"' ; then
+              echo "ERROR: Failed to create release: $create_release_resp"
+              exit 1
+            fi
             upload_url=$(echo "$create_release_resp" | sed -nE 's|.*"upload_url": "(.*)".*|\1|p' | sed 's|{.*}||')
           else
             echo "Updating existing release..."
