@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from .lib import data, log
+from python.utils.lib import data, log
 
 personas_path = Path(__file__).parent.parent / 'data/ai-personas.json'
 
