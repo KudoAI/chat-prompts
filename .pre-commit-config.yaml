@@ -14,8 +14,9 @@ repos:
     hooks:
       - id: pymarkdown
         args: [ # https://pymarkdown.readthedocs.io/en/latest/rules/
-          # heading-increment, line-length, single-h1, no-trailing-punctuation, ol-prefix, no-inline-html, first-line-h1
-          --disable, "md001,md013,md025,md026,md029,md033,md041", scan
+          # disable: heading-increment, no-multiple-blanks, line-length, blanks-around-headings, no-duplicate-heading,
+          #          single-h1, no-trailing-punctuation, ol-prefix, no-inline-html, first-line-h1
+          --disable, "md001,md012,md013,md022,md024,md025,md026,md029,md033,md041", scan
         ]
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
