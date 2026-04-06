@@ -55,6 +55,7 @@ def update_readme_vers(new_ver):
     )
     data.file.write(paths.readme, updated_readme_content)
     log.success(msgs.log_UPDATED_README_VERS.format(**locals()))
+
 def main():
 
     # Parse args
