@@ -48,8 +48,8 @@ def bump_pyproject_vers(pyproject, project, new_ver):
 def update_readme_vers(new_ver):
     log.info(f'{msgs.log_UPDATING_VERS_IN} docs/README.md...')
     updated_readme_content = re.sub(
-        r'([-v])\d{1,3}\.\d{1,3}\.\d{1,3}',  # match - or v + version
-        lambda m: f'{m.group(1)}{new_ver}',  # safe replacement
+        r'([-v])\d{1,3}\.\d{1,3}\.\d{1,3}',
+        lambda ver_match: f'{ver_match.group(1)}{new_ver}', # preserve -/v prefix
         data.file.read(paths.readme)
     )
     data.file.write(paths.readme, updated_readme_content)
