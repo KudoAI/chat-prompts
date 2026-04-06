@@ -1,3 +1,4 @@
+import argparse, re, sys
 from pathlib import Path
 from types import SimpleNamespace as sn
 
@@ -11,7 +12,6 @@ paths.util_msgs = paths.root / 'utils/data/messages.json'
 msgs = sn(**{ key:val['message'] for key,val in data.json.read(paths.util_msgs)['bump'].items() })
 
 def parse_args():
-    import argparse
     argp = argparse.ArgumentParser(description=msgs.app_DESC, add_help=False)
     argp.add_argument('-M', '--major', action='store_true', help=msgs.help_MAJOR)
     argp.add_argument('-m', '--minor', action='store_true', help=msgs.help_MINOR)
@@ -46,7 +46,6 @@ def bump_pyproject_vers(pyproject, project, new_ver):
     log.success(msgs.log_BUMPED_CLOG_URL_VER_TAG.format(**locals()))
 
 def update_readme_vers(new_ver):
-    import re
     log.info(f'{msgs.log_UPDATING_VERS_IN} docs/README.md...')
     updated_readme_content = re.sub(
         r'([-v])\d{1,3}\.\d{1,3}\.\d{1,3}',  # match - or v + version
@@ -62,7 +61,6 @@ def main():
     args = parse_args()
     bump_type = 'major' if args.major else 'minor' if args.minor else 'patch' if args.patch else None
     if not bump_type:
-        import sys
         log.error(msgs.err_MISSING_BUMP_TYPE_ARG)
         sys.exit(1)
 
