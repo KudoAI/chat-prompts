@@ -2,7 +2,7 @@
 
 const fs = require('fs'),
       file = require('./lib/file'),
-      log = require('./lib/log')
+     _log = require('./lib/log')
 
 const pkgVer = require('../package.json').version
 
@@ -11,4 +11,4 @@ fs.mkdirSync('dist', { recursive: true })
 file.copy('src/index.js', 'dist/index.js')
 file.copy('ai-personas.json', 'dist/ai-personas.json')
 
-log.success(`v${pkgVer} build complete!`)
+_log.success(`v${pkgVer} build complete!`)
