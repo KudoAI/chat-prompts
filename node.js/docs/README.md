@@ -34,7 +34,7 @@ console.log(personas['Linux Terminal'].prompt)
 // => I want you to act as a linux terminal. I will type commands and you will...
 ```
 
-#### CommonJS (CJS) :
+#### CommonJS (CJS):
 
 ```js
 const personas = require('@kudoai/ai-personas')
@@ -151,8 +151,8 @@ Prompt B: I want you to act as a DAX terminal...
 const systemPrompt = ai_personas['Study Planner'].prompt
 
 const messages = [
-    {'role': 'system', 'content': systemPrompt},
-    {'role': 'user', 'content': 'Create a weekly study plan for calculus'}
+    { 'role': 'system', 'content': systemPrompt },
+    { 'role': 'user', 'content': 'Create a weekly study plan for calculus' }
 ]
 ```
 
