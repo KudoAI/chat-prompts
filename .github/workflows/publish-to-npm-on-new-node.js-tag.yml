@@ -1,0 +1,21 @@
+name: Publish to npm on new node.js tag
+
+on:
+  push:
+    tags: ["node.js*"]
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v6.0.2
+      - uses: actions/setup-node@v6.3.0
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org
+      - run: cd node.js && npm ci
+      - run: cd node.js && npm run build
+      - run: cd node.js && npm publish --provenance --access public
