@@ -3,6 +3,7 @@ name: Sync releases to adamlui/python-utils
 on:
   release:
     types: [published, edited]
+    tags: ["python*"]
 
 jobs:
   sync-release:
