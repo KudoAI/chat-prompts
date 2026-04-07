@@ -114,8 +114,6 @@ print(filled_prompt)
 #### Combine prompts:
 
 ```py
-import ai_personas
-
 mega_prompt = f'''
 When I start w/ sh: follow prompt A. When I start w/ dax: follow prompt B.
 
@@ -149,7 +147,6 @@ messages = [
 #### Use persona w/ an LLM:
 
 ```py
-import ai_personas
 from openai import OpenAI
 
 client = OpenAI()
