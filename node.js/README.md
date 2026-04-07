@@ -25,7 +25,7 @@ npm install @kudoai/ai-personas
 
 ## 🔌 Usage
 
-#### ES Modules (ESM): 
+#### ES Modules (ESM):
 
 ```js
 import personas from '@kudoai/ai-personas'

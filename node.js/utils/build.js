@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const fs = require('fs'), 
+const fs = require('fs'),
       file = require('./lib/file'),
       log = require('./lib/log')
 
