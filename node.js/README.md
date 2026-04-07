@@ -151,8 +151,8 @@ Prompt B: I want you to act as a DAX terminal...
 const systemPrompt = ai_personas['Study Planner'].prompt
 
 const messages = [
-    {'role': 'system', 'content': systemPrompt},
-    {'role': 'user', 'content': 'Create a weekly study plan for calculus'}
+    { 'role': 'system', 'content': systemPrompt },
+    { 'role': 'user', 'content': 'Create a weekly study plan for calculus' }
 ]
 ```
 
