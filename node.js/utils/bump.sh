@@ -1,0 +1,60 @@
+#!/bin/bash
+
+# Init UI colors
+NC="\033[0m"    # no color
+BR="\033[1;91m" # bright red
+BY="\033[1;33m" # bright yellow
+BG="\033[1;92m" # bright green
+BW="\033[1;97m" # bright white
+
+# Determine new version to bump to
+BUMP_TYPES=("major" "minor" "patch")
+old_ver=$(node -pe "require('./package.json').version")
+IFS='.' read -ra subvers <<< "$old_ver" # split old_ver into subvers array
+case $1 in
+    "patch") subvers[2]=$((subvers[2] +1)) ;;
+    "minor") subvers[1]=$((subvers[1] +1)) ; subvers[2]=0 ;;
+    "major") subvers[0]=$((subvers[0] +1)) ; subvers[1]=0 ; subvers[2]=0 ;;
+    *) echo -e "\n${BR}Invalid bump type arg provided: $1${NC}" ;
+       echo -e "\n${BY}Valid args are: ${BUMP_TYPES[*]/#/--}${NC}" ;
+       exit 1 ;;
+esac
+new_ver=$(printf "%s.%s.%s" "${subvers[@]}")
+
+# PULL latest changes
+echo -e "${BY}Pulling latest changes from remote to sync local repository...${NC}\n"
+git pull || (echo -e "${BR}Merge failed, please resolve conflicts!${NC}" && exit 1)
+echo ''
+
+# Bump version in package.json + package-lock.json
+echo -e "${BY}Bumping versions in package manifests...${BW}"
+npm version --no-git-tag-version "$new_ver"
+
+# Bump versions in READMEs
+echo -e "${BY}\nBumping versions in READMEs...${BW}"
+pkg_name=$(node -pe "require('./package.json').name" | sed -e 's/^@[a-zA-Z0-9-]*\///' -e 's/^@//')
+sed_actions=(
+    # Latest Build shield link
+    -exec sed -i -E "s|(tag/[^0-9]+)[0-9]+\.[0-9]+\.[0-9]+|\1$new_ver|g" {} +   
+    # Latest Build shield src
+    -exec sed -i -E "s|[0-9.]+(-.*logo=icinga)|$new_ver\1|" {} + 
+    # Minified Size shield link/src
+    -exec sed -i -E "s|-[0-9]+\.[0-9]+\.[0-9]+([^.]\|$)|-$new_ver\1|g" {} +
+    # jsDelivr ver tags in import section
+    -exec sed -i -E "s|@([0-9]+\.[0-9]+\.[0-9]+)|@$new_ver|g" {} +
+)
+find . -name 'README.md' "${sed_actions[@]}"
+echo "v$new_ver"
+
+# Commit bumps to Git
+echo -e "${BY}\nCommitting bumps to Git...\n${NC}"
+find . -name "README.md" -exec git add {} +
+git add package*.json
+git commit -n -m "Bumped $pkg_name versions to $new_ver"
+
+# Push all changes to GiHub
+echo -e "${BY}\nPushing to GitHub...\n${NC}"
+git push
+
+# Print final summary
+echo -e "\n${BG}Successfully bumped to v$new_ver$([[ "$*" == *"--publish"* ]] && echo ' and published to npm')!${NC}"

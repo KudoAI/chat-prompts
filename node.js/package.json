@@ -1,0 +1,67 @@
+{
+  "name": "@kudoai/ai-personas",
+  "version": "1.0.0",
+  "description": "1,000+ AI personas for LLMs and agents.",
+  "author": {
+    "name": "KudoAI",
+    "email": "contact@kudoai.com",
+    "url": "https://www.kudoai.com"
+  },
+  "homepage": "https://github.com/KudoAI/ai-personas/#readme",
+  "contributors": [
+    {
+      "name": "Adam Lui",
+      "email": "adam@kudoai.com",
+      "url": "https://github.com/adamlui"
+    },
+    {
+      "name": "madkarmaa",
+      "email": "me@madkarma.top",
+      "url": "https://github.com/madkarmaa"
+    }
+  ],
+  "license": "MIT",
+  "funding": [
+    {
+      "type": "github",
+      "url": "http://github.com/sponsors/KudoAI"
+    }
+  ],
+  "main": "dist/index.js",
+  "files": [
+    "dist/",
+    "docs/"
+  ],
+  "scripts": {
+    "build": "node utils/build",
+    "bump:patch": "bash utils/bump.sh patch",
+    "bump:minor": "bash utils/bump.sh minor",
+    "bump:feat": "npm run bump:minor",
+    "bump:major": "bash utils/bump.sh major"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KudoAI/ai-prompts.git"
+  },
+  "keywords": [
+    "agents",
+    "ai",
+    "ai-personas",
+    "chat-prompts",
+    "chatgpt",
+    "claude",
+    "dataset",
+    "gemini",
+    "gen-ai",
+    "llm",
+    "llm-prompts",
+    "personas",
+    "prompt-engineering",
+    "prompts",
+    "system-prompts",
+    "text-generation"
+  ],
+  "bugs": {
+    "url": "https://github.com/KudoAI/ai-personas/issues"
+  }
+}
