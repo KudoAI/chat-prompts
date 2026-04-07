@@ -41,12 +41,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KudoAI/ai-prompts.git"
+    "url": "git+https://github.com/KudoAI/ai-personas.git"
   },
   "keywords": [
     "agents",
     "ai",
     "ai-personas",
+    "ai-prompts",
     "chat-prompts",
     "chatgpt",
     "claude",
