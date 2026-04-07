@@ -34,7 +34,7 @@ console.log(personas['Linux Terminal'].prompt)
 // => I want you to act as a linux terminal. I will type commands and you will...
 ```
 
-#### CommonJS (CJS) :
+#### CommonJS (CJS):
 
 ```js
 const personas = require('@kudoai/ai-personas')
