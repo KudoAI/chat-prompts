@@ -37,7 +37,11 @@
     "bump:patch": "bash utils/bump.sh patch",
     "bump:minor": "bash utils/bump.sh minor",
     "bump:feat": "npm run bump:minor",
-    "bump:major": "bash utils/bump.sh major"
+    "bump:major": "bash utils/bump.sh major",
+    "lint": "eslint . --cache",
+    "lint:all": "eslint .",
+    "lint:fix": "eslint . --fix --cache",
+    "lint:fix-all": "eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -65,5 +69,13 @@
   ],
   "bugs": {
     "url": "https://github.com/KudoAI/ai-personas/issues"
+  },
+  "devDependencies": {
+    "@eslint/json": "^1.2.0",
+    "@eslint/markdown": "^8.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "eslint": "^9.39.4",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-regexp": "^3.1.0"
   }
 }
