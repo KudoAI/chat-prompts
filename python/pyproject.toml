@@ -97,6 +97,7 @@ Repository = "https://github.com/KudoAI/ai-personas"
 [project.optional-dependencies]
 dev = [
     "nox>=2026.2.9",
+    "pre-commit>=4.5.1,<5",
     "tomli>=2.4.0,<3",
     "tomli-w>=1.2.0,<2",
 ]
