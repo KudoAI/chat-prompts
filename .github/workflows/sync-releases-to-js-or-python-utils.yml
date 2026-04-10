@@ -29,8 +29,6 @@ jobs:
 
           RUNTIME="${RELEASE_TAG%%-*}"
           TARGET_REPO="adamlui/${RUNTIME/node.js/js}-utils"
-          echo "Target Repo: $TARGET_REPO"
-
           RELEASE_JSON=$(curl -s "https://api.github.com/repos/KudoAI/ai-personas/releases/tags/$RELEASE_TAG")
           RELEASE_NOTES=$(echo "$RELEASE_JSON" | sed -nE 's/.*"body": "(.*)".*/\1/p')
 
