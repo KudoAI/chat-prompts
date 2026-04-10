@@ -21,6 +21,7 @@ jobs:
         with:
           app-id: ${{ secrets.KSB_APP_ID }}
           private-key: ${{ secrets.KSB_PRIVATE_KEY }}
+          owner: adamlui
 
       - name: Sync release to adamlui/python-utils
         run: |
