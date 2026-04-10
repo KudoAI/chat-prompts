@@ -21,16 +21,13 @@ case $1 in
 esac
 new_ver=$(printf "%s.%s.%s" "${subvers[@]}")
 
-# PULL latest changes
 echo -e "${BY}Pulling latest changes from remote to sync local repository...${NC}\n"
 git pull || (echo -e "${BR}Merge failed, please resolve conflicts!${NC}" && exit 1)
 echo ''
 
-# Bump version in package.json + package-lock.json
 echo -e "${BY}Bumping versions in package manifests...${BW}"
 npm version --no-git-tag-version "$new_ver"
 
-# Bump versions in READMEs
 echo -e "${BY}\nBumping versions in READMEs...${BW}"
 pkg_name=$(node -pe "require('./package.json').name" | sed -e 's/^@[a-zA-Z0-9-]*\///' -e 's/^@//')
 sed_actions=(
@@ -46,15 +43,31 @@ sed_actions=(
 find . -name 'README.md' "${sed_actions[@]}"
 echo "v$new_ver"
 
-# Commit bumps to Git
+echo -e "\n${BY}Switching Git committer to kudo-sync-bot...${NC}"
+git config --global --list > ~/.gitconfig.backup 2>/dev/null || true # back up git config
+if [ -n "$GPG_KEYS_PATH" ] ; then
+    KEY_PATH="$GPG_KEYS_PATH/kudo-sync-bot-private-key.asc"
+    if [ -f "$KEY_PATH" ] ; then gpg --batch --import "$KEY_PATH" ; fi
+    KEY_ID_PATH="$GPG_KEYS_PATH/kudo-sync-bot-key-id.txt"
+    if [ -f "$KEY_ID_PATH" ] ; then git config --global user.signingkey "$(cat "$KEY_ID_PATH")" ; fi
+fi
+git config --global commit.gpgsign true
+git config --global user.name "kudo-sync-bot"
+git config --global user.email "auto-sync@kudoai.com"
+
 echo -e "${BY}\nCommitting bumps to Git...\n${NC}"
 find . -name "README.md" -exec git add {} +
 git add package*.json
 git commit -n -m "Bumped $pkg_name versions to $new_ver"
 
-# Push all changes to GiHub
 echo -e "${BY}\nPushing to GitHub...\n${NC}"
 git push
 
-# Print final summary
-echo -e "\n${BG}Successfully bumped to v$new_ver$([[ "$*" == *"--publish"* ]] && echo ' and published to npm')!${NC}"
+echo -e "\n${BY}Restoring original Git config...${NC}"
+if [ -f ~/.gitconfig.backup ] ; then
+    while IFS='=' read -r key val ; do git config --global "$key" "$val"
+    done < ~/.gitconfig.backup
+    rm ~/.gitconfig.backup
+else echo "No git config backup found" ; fi
+
+echo -e "\n${BG}Successfully bumped to v$new_ver!${NC}"
