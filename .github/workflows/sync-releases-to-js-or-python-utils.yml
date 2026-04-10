@@ -3,7 +3,6 @@ name: Sync releases to adamlui/<js|python>-utils
 on:
   release:
     types: [published, edited]
-    tags: ["python*", "node.js*"]
 
 jobs:
   sync-release:
@@ -11,8 +10,6 @@ jobs:
     runs-on: ubuntu-24.04
     permissions:
       contents: read
-    env:
-      REPO_SYNC_PAT: ${{ secrets.REPO_SYNC_PAT }}
 
     steps:
       - name: Generate KSB token
@@ -23,10 +20,13 @@ jobs:
           private-key: ${{ secrets.KSB_PRIVATE_KEY }}
           owner: adamlui
 
-      - name: Sync release
+      - name: Sync release to adamlui/<js|python>-utils
         run: |
           RELEASE_TITLE="${{ github.event.release.name }}"
           RELEASE_TAG="${{ github.event.release.tag_name }}"
+          echo "Source Title: $RELEASE_TITLE"
+          echo "Source Tag: $RELEASE_TAG"
+          [[ "$RELEASE_TAG" == python* || "$RELEASE_TAG" == node.js* ]] || exit 0
           echo "Source Title: $RELEASE_TITLE"
           echo "Source Tag: $RELEASE_TAG"
 
@@ -49,7 +49,7 @@ jobs:
           echo "Target Title: $TARGET_RELEASE_TITLE"
           echo "Target Tag: $TARGET_RELEASE_TAG"
 
-          # Check release exists in python-utils
+          # Check release exists in adamlui/python-utils
           RELEASE_CHECK_RESP=$(curl -s \
             "https://api.github.com/repos/$TARGET_REPO/releases/tags/$TARGET_RELEASE_TAG")
           TARGET_RELEASE_ID=$(echo "$RELEASE_CHECK_RESP" | sed -nE 's/.*"id":[[:space:]]*([0-9]+).*/\1/p' | head -1)
@@ -62,7 +62,7 @@ jobs:
           fi
 
           # Append auto-sync trailer
-          RELEASE_NOTES+="\n###### _Auto-synced from https://github.com/KudoAI/ai-personas/releases"
+          RELEASE_NOTES+="\n\n###### _Auto-synced from https://github.com/KudoAI/ai-personas/releases"
           RELEASE_NOTES+=" by_ :robot: [kudo-sync-bot](https://github.com/kudo-sync-bot)"
 
           if [ "$RELEASE_EXISTS" = false ] ; then
