@@ -26,7 +26,6 @@ jobs:
           RELEASE_TAG="${{ github.event.release.tag_name }}"
           echo "Source Title: $RELEASE_TITLE"
           echo "Source Tag: $RELEASE_TAG"
-          [[ "$RELEASE_TAG" == python* || "$RELEASE_TAG" == node.js* ]] || exit 0
 
           RUNTIME="${RELEASE_TAG%%-*}"
           TARGET_REPO="adamlui/${RUNTIME/node.js/js}-utils"
