@@ -1,13 +1,13 @@
-name: Sync releases to adamlui/python-utils
+name: Sync releases to adamlui/<js|python>-utils
 
 on:
   release:
     types: [published, edited]
-    tags: ["python*"]
+    tags: ["python*", "node.js*"]
 
 jobs:
   sync-release:
-    name: Sync release to adamlui/python-utils
+    name: Sync release to adamlui/<js|python>-utils
     runs-on: ubuntu-24.04
     permissions:
       contents: read
@@ -23,12 +23,16 @@ jobs:
           private-key: ${{ secrets.KSB_PRIVATE_KEY }}
           owner: adamlui
 
-      - name: Sync release to adamlui/python-utils
+      - name: Sync release
         run: |
           RELEASE_TITLE="${{ github.event.release.name }}"
           RELEASE_TAG="${{ github.event.release.tag_name }}"
           echo "Source Title: $RELEASE_TITLE"
           echo "Source Tag: $RELEASE_TAG"
+
+          RUNTIME="${RELEASE_TAG%%-*}"
+          TARGET_REPO="adamlui/${RUNTIME/node.js/js}-utils"
+          echo "Target Repo: $TARGET_REPO"
 
           RELEASE_JSON=$(curl -s "https://api.github.com/repos/KudoAI/ai-personas/releases/tags/$RELEASE_TAG")
           RELEASE_NOTES=$(echo "$RELEASE_JSON" | sed -nE 's/.*"body": "(.*)".*/\1/p')
@@ -40,14 +44,14 @@ jobs:
           RELEASE_NOTES=$(echo "$RELEASE_NOTES" | \
             sed 's|📃|:page_with_curl:|g; s|🚀|:rocket:|g; s|🧠|:brain:|g; s|💻|:computer:|g')
 
-          TARGET_RELEASE_TITLE="${RELEASE_TITLE// (Python)/}"
-          TARGET_RELEASE_TAG="ai-personas-$(echo "$RELEASE_TAG" | sed -E 's/^python-v([0-9.]+)$/\1/')"
+          TARGET_RELEASE_TITLE=$(echo "$RELEASE_TITLE" | sed -E 's/ \((Python|Node\.js)\)//')
+          TARGET_RELEASE_TAG="ai-personas-$(echo "$RELEASE_TAG" | sed -E 's/^[^-]+-v//')"
           echo "Target Title: $TARGET_RELEASE_TITLE"
           echo "Target Tag: $TARGET_RELEASE_TAG"
 
           # Check release exists in python-utils
           RELEASE_CHECK_RESP=$(curl -s \
-            "https://api.github.com/repos/adamlui/python-utils/releases/tags/$TARGET_RELEASE_TAG")
+            "https://api.github.com/repos/$TARGET_REPO/releases/tags/$TARGET_RELEASE_TAG")
           TARGET_RELEASE_ID=$(echo "$RELEASE_CHECK_RESP" | sed -nE 's/.*"id":[[:space:]]*([0-9]+).*/\1/p' | head -1)
           if [ -n "$TARGET_RELEASE_ID" ] ; then
             RELEASE_EXISTS=true
@@ -63,7 +67,7 @@ jobs:
 
           if [ "$RELEASE_EXISTS" = false ] ; then
             echo "Creating new release..."
-            create_release_url="https://api.github.com/repos/adamlui/python-utils/releases"
+            create_release_url="https://api.github.com/repos/$TARGET_REPO/releases"
             create_release_payload=$(
               printf '{"tag_name": "%s","name": "%s","body": "%s"}' \
                 "$TARGET_RELEASE_TAG" "$TARGET_RELEASE_TITLE" "$RELEASE_NOTES")
@@ -77,7 +81,7 @@ jobs:
             upload_url=$(echo "$create_release_resp" | sed -nE 's|.*"upload_url": "(.*)".*|\1|p' | sed 's|{.*}||')
           else
             echo "Updating existing release..."
-            update_release_url="https://api.github.com/repos/adamlui/python-utils/releases/$TARGET_RELEASE_ID"
+            update_release_url="https://api.github.com/repos/$TARGET_REPO/releases/$TARGET_RELEASE_ID"
             update_release_payload=$(
               printf '{"name": "%s","body": "%s"}' \
                 "$TARGET_RELEASE_TITLE" "$RELEASE_NOTES")
@@ -89,8 +93,8 @@ jobs:
               exit 1
             fi
             get_release_resp=$(curl -s -S -H "Authorization: Bearer ${{ steps.ksb-token.outputs.token }}" \
-              "https://api.github.com/repos/adamlui/python-utils/releases/tags/$TARGET_RELEASE_TAG")
+              "https://api.github.com/repos/$TARGET_REPO/releases/tags/$TARGET_RELEASE_TAG")
             upload_url=$(echo "$get_release_resp" | sed -nE 's|.*"upload_url": "(.*)".*|\1|p' | sed 's|{.*}||')
           fi
 
-          echo "Release synced to adamlui/python-utils ($TARGET_RELEASE_TAG)!"
+          echo "Release synced to $TARGET_REPO ($TARGET_RELEASE_TAG)!"
