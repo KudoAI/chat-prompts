@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: Generate KSB token
         id: ksb-token
-        uses: actions/create-github-app-token@v3.0.0
+        uses: actions/create-github-app-token@v3.1.1
         with:
           app-id: ${{ secrets.KSB_APP_ID }}
           private-key: ${{ secrets.KSB_PRIVATE_KEY }}
