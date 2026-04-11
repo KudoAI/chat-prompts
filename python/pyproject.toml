@@ -1,6 +1,6 @@
 [build-system]
 requires = [
-    "setuptools>=82.0.0,<83",
+    "setuptools>=82.0.1,<83",
     "wheel",
 ]
 build-backend = "setuptools.build_meta"
@@ -96,9 +96,9 @@ Repository = "https://github.com/KudoAI/ai-personas"
 
 [project.optional-dependencies]
 dev = [
-    "nox>=2026.2.9",
+    "nox>=2026.4.10",
     "pre-commit>=4.5.1,<5",
-    "tomli>=2.4.0,<3",
+    "tomli>=2.4.1,<3",
     "tomli-w>=1.2.0,<2",
 ]
 
