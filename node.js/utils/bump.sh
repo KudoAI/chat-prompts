@@ -43,17 +43,17 @@ sed_actions=(
 find . -name 'README.md' "${sed_actions[@]}"
 echo "v$new_ver"
 
-echo -e "\n${BY}Switching Git committer to kudo-sync-bot...${NC}"
-git config --global --list > ~/.gitconfig.backup 2>/dev/null || true # back up git config
+echo -e "${BY}\nChanging Git author/committer to kudo-sync-bot...\n${NC}"
 if [ -n "$GPG_KEYS_PATH" ] ; then
     KEY_PATH="$GPG_KEYS_PATH/kudo-sync-bot-private-key.asc"
     if [ -f "$KEY_PATH" ] ; then gpg --batch --import "$KEY_PATH" ; fi
     KEY_ID_PATH="$GPG_KEYS_PATH/kudo-sync-bot-key-id.txt"
-    if [ -f "$KEY_ID_PATH" ] ; then git config --global user.signingkey "$(cat "$KEY_ID_PATH")" ; fi
+    if [ -f "$KEY_ID_PATH" ] ; then KEY_ID="$(cat "$KEY_ID_PATH")" ; fi
 fi
-git config --global commit.gpgsign true
-git config --global user.name "kudo-sync-bot"
-git config --global user.email "auto-sync@kudoai.com"
+export GIT_AUTHOR_NAME="kudo-sync-bot"
+export GIT_AUTHOR_EMAIL="auto-sync@kudoai.com"
+export GIT_COMMITTER_NAME="kudo-sync-bot"
+export GIT_COMMITTER_EMAIL="auto-sync@kudoai.com"
 
 echo -e "${BY}\nCommitting bumps to Git...\n${NC}"
 find . -name "README.md" -exec git add {} +
@@ -63,11 +63,4 @@ git commit -n -m "Bumped $pkg_name versions to $new_ver"
 echo -e "${BY}\nPushing to GitHub...\n${NC}"
 git push
 
-echo -e "\n${BY}Restoring original Git config...${NC}"
-if [ -f ~/.gitconfig.backup ] ; then
-    while IFS='=' read -r key val ; do git config --global "$key" "$val"
-    done < ~/.gitconfig.backup
-    rm ~/.gitconfig.backup
-else echo "No git config backup found" ; fi
-
-echo -e "\n${BG}Successfully bumped to v$new_ver!${NC}"
+echo -e "${BG}\nSuccessfully bumped to v$new_ver!${NC}"
