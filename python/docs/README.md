@@ -192,4 +192,4 @@ print(response.choices[0].message.content)
 <a href="https://github.com/KudoAI/ai-personas/issues">Report bug</a> /
 <a href="mailto:security@tidelift.com">Report vulnerability</a> /
 <a href="#top">Back to top ↑</a>
-  
+
