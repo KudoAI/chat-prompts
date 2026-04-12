@@ -7,7 +7,7 @@ from .lib import prompt
 from python.utils.lib import data, log
 
 prompts_csv_url = 'https://huggingface.co/datasets/fka/prompts.chat/raw/main/prompts.csv'
-output_path = Path(__file__).parent.parent.parent / 'data/ai-personas.json'
+output_path = Path(__file__).parent.parent / 'data/ai-personas.json'
 
 log.info(f'Downloading {prompts_csv_url}...')
 csv.field_size_limit(10**9) # to accommodate longass prompts
@@ -22,6 +22,7 @@ text_prompt_rows = [
     row for row in prompt_rows
         if row.get('type') == 'TEXT'
             and not prompt.looks_like_img_type(row.get('prompt', ''))
+            and not prompt.looks_like_vid_type(row.get('prompt', ''))
             and row.get('act', '').strip().lower() != 'test'
             and (row_lower := row['act'].strip().lower()) not in seen_personas
             and not seen_personas.add(row_lower)
@@ -29,13 +30,24 @@ text_prompt_rows = [
 log.success(f'{len(text_prompt_rows):,} text prompts found!')
 
 log.info(f'Reading {output_path}...')
-personas = data.json.read(output_path) if output_path.exists() else {}
+if not output_path.exists():
+    log.error(f'Output path does not exist: {output_path}')
+    raise SystemExit(1)
+personas = data.json.read(output_path)
 log.success(f'{len(personas):,} previous personas loaded!')
 
 log.info('Adding new personas...')
 added_cnt = 0
+emoji_re = re.compile(
+    '['
+        '\U0001F300-\U0001FAFF' # symbols/emoji
+        '\U00002700-\U000027BF' # dingbats
+        '\U0001F1E0-\U0001F1FF' # flags
+    ']+',
+    flags=re.UNICODE
+)
 for row in text_prompt_rows:
-    role = re.sub(r'^# |["“”‘’]', '', row['act']).strip()
+    role = re.sub(r'^# |["“”‘’]', '', emoji_re.sub('', row['act'])).strip()
     persona = {'prompt': row['prompt'].strip()}
     if row.get('for_devs', '').strip().upper() == 'TRUE':
         persona['targetAudience'] = ['devs']
