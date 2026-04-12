@@ -28,19 +28,9 @@ echo ''
 echo -e "${BY}Bumping versions in package manifests...${BW}"
 npm version --no-git-tag-version "$new_ver"
 
-echo -e "${BY}\nBumping versions in READMEs...${BW}"
-pkg_name=$(node -pe "require('./package.json').name" | sed -e 's/^@[a-zA-Z0-9-]*\///' -e 's/^@//')
-sed_actions=(
-    # Latest Build shield link
-    -exec sed -i -E "s|(tag/[^0-9]+)[0-9]+\.[0-9]+\.[0-9]+|\1$new_ver|g" {} +
-    # Latest Build shield src
-    -exec sed -i -E "s|[0-9.]+(-.*logo=icinga)|$new_ver\1|" {} +
-    # Minified Size shield link/src
-    -exec sed -i -E "s|-[0-9]+\.[0-9]+\.[0-9]+([^.]\|$)|-$new_ver\1|g" {} +
-    # jsDelivr ver tags in import section
-    -exec sed -i -E "s|@([0-9]+\.[0-9]+\.[0-9]+)|@$new_ver|g" {} +
-)
-find . -name 'README.md' "${sed_actions[@]}"
+echo "Bumping versions in READMEs..."
+find . -name 'README.md' -exec sed -i -E \
+    "s/([-v])([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})/\1$new_ver/g" {} +
 echo "v$new_ver"
 
 echo -e "${BY}\nChanging Git author/committer to kudo-sync-bot...\n${NC}"
