@@ -89,7 +89,6 @@ def main():
             log.info(f'{msgs.log_PUSHING_CHANGES}...')
             git.push()
             log.success(f'{msgs.log_PUSHED_ALL_COMMITS}')
-        git.restore_og_config(msgs)
 
     log.success(f'{msgs.log_SUCCESS}! {project.name} {msgs.log_BUMPED_TO} v{new_ver}!')
 
