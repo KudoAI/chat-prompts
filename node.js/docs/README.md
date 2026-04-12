@@ -167,7 +167,7 @@ const messages = [
     <tr>
         <td>Code</td>
         <td><a href="https://github.com/KudoAI/ai-personas/blob/main/node.js/docs/licenses/LICENSE-CODE.md">MIT License</a></td>
-        <td>© 2026 <a href="https://www.kudoai.com">KudoAI</a> & contributors</td>
+        <td>© 2026 <a href="https://www.kudoai.com">KudoAI</a> & contributors.</td>
     </tr>
 </table>
 
