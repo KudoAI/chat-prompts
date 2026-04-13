@@ -15,12 +15,11 @@ def init_kudo_sync_bot(msgs):
         if key_path.exists() : subprocess.run(['gpg', '--batch', '--import', str(key_path)], check=True)
         key_id_path = Path(gpg_keys_path) / 'kudo-sync-bot-key-id.txt'
         if key_id_path.exists() : KEY_ID = key_id_path.read_text().strip()
-    if KEY_ID : os.environ['GIT_COMMITTER_SIGNINGKEY'] = KEY_ID
     os.environ['GIT_AUTHOR_NAME'] = 'kudo-sync-bot'
     os.environ['GIT_AUTHOR_EMAIL'] = 'auto-sync@kudoai.com'
     os.environ['GIT_COMMITTER_NAME'] = 'kudo-sync-bot'
     os.environ['GIT_COMMITTER_EMAIL'] = 'auto-sync@kudoai.com'
-    return True
+    return KEY_ID
 
 def push() : run('push')
 
