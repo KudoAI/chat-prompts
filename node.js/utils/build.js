@@ -11,4 +11,4 @@ fs.mkdirSync('dist', { recursive: true })
 file.copy('src/index.js', 'dist/index.js')
 file.copy('ai-personas.json', 'dist/ai-personas.json')
 
-_log.success(`${pkg.name} v${pkg.ver} build complete!`)
+_log.success(`${pkg.name} v${pkg.version} build complete!`)
