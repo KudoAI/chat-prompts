@@ -28,7 +28,7 @@ echo ''
 echo -e "${BY}Bumping versions in package manifests...${BW}"
 npm version --no-git-tag-version "$new_ver"
 
-echo "Bumping versions in READMEs..."
+echo -e "${BY}\nBumping versions in READMEs...${BW}"
 find . -name 'README.md' -exec sed -i -E \
     "s/([-v])([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})/\1$new_ver/g" {} +
 echo "v$new_ver"
