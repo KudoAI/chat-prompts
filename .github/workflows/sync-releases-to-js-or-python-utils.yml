@@ -16,7 +16,7 @@ jobs:
         id: ksb-token
         uses: actions/create-github-app-token@v3.1.1
         with:
-          app-id: ${{ secrets.KSB_APP_ID }}
+          client-id: ${{ secrets.KSB_APP_ID }}
           private-key: ${{ secrets.KSB_PRIVATE_KEY }}
           owner: adamlui
 
