@@ -78,11 +78,13 @@ def main():
     if args.no_commit:
         print(f'\n{msgs.log_SKIPPING_GIT_COMMIT}...')
     else:
-        from .lib import git
-        git.init_kudo_sync_bot(msgs)
         log.info(f'{msgs.log_COMMITTING_CHANGES}...')
+        from .lib import git
+        KEY_ID = git.init_kudo_sync_bot(msgs)
         git.commit([str(paths.pyproject), str(paths.readme)],
-            f'Bumped {project.name} versions to {new_ver}', '-n')
+            f'Bumped {project.name} versions to {new_ver}',
+            '-n', f'-S{KEY_ID}' if KEY_ID else ''
+        )
         if args.no_push:
             print(f'\n{msgs.log_SKIPPING_GIT_PUSH}...')
         else:
