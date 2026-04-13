@@ -48,7 +48,7 @@ export GIT_COMMITTER_EMAIL="auto-sync@kudoai.com"
 echo -e "${BY}\nCommitting bumps to Git...\n${NC}"
 find . -name "README.md" -exec git add {} +
 git add package*.json
-git commit -n -m "Bumped $pkg_name versions to $new_ver" -S $KEY_ID
+git commit -n -m "Bumped $pkg_name versions to $new_ver" -S$KEY_ID
 
 echo -e "${BY}\nPushing to GitHub...\n${NC}"
 git push
