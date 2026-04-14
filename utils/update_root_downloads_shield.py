@@ -71,17 +71,17 @@ def update_downloads_shield(readme_path: str, downloads: int) -> bool:
     lines = read_file(readme_path)
     shield_re = r'(?i)(<img[^>]+src="https://img.shields.io/badge/Downloads-)([\d,\.km]+)(-[a-f\d]{6})'
     downloads_str = f'{format_total(downloads).lower()}'
-    readme_updated = False
+    shield_updated = False
     for idx, line in enumerate(lines):
         shield_match = re.search(shield_re, line)
         if shield_match:
             new_line = re.sub(shield_match.group(2), downloads_str, line)
             if new_line != line:
                 lines[idx] = new_line
-                readme_updated = True
+                shield_updated = True
                 print(f'»»» {new_line.strip()}\n')
-    if readme_updated: write_file(readme_path, lines)
-    return readme_updated
+    if shield_updated: write_file(readme_path, lines)
+    return shield_updated
 
 def main() -> None:
     pypi_downloads = get_pkg_downloads(PYPI_PKG, ecosystem='pypi')
@@ -92,8 +92,8 @@ def main() -> None:
     print('-' * 45)
     print(f'{"TOTAL DOWNLOADS":30} {grand_total_dls:,}\n')
     print(f'Updating {README_PATH}...\n')
-    readme_updated = update_downloads_shield(README_PATH, grand_total_dls)
+    shield_updated = update_downloads_shield(README_PATH, grand_total_dls)
     print('Done!')
-    raise SystemExit(0 if readme_updated else 2)
+    raise SystemExit(0 if shield_updated else 2)
 
 if __name__ == '__main__' : main()
