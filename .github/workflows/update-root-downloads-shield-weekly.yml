@@ -1,0 +1,53 @@
+name: Update root downloads shield
+
+on:
+  schedule:
+    - cron: "34 2 * * 5" # every Fri @ 2:34 AM
+  workflow_dispatch:
+
+jobs:
+  update-root-downloads-shield:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    env:
+      TZ: PST8PDT
+
+    steps:
+
+      - name: Checkout KudoAI/ai-personas
+        uses: actions/checkout@v6.0.2
+        with:
+          token: ${{ secrets.REPO_SYNC_PAT }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v6.2.0
+        with:
+          python-version: 3.x
+
+      - name: Update README shield
+        id: update_shield
+        run: |
+          python3 utils/update_root_downloads_shield.py
+          if [[ $? -eq 0 ]] ; then
+            echo "Shield updated!"
+            echo "SHIELD_UPDATED=true" >> $GITHUB_ENV
+          else
+            echo "No update needed."
+            echo "SHIELD_UPDATED=false" >> $GITHUB_ENV
+          fi
+
+      - name: Push changes
+        if: env.SHIELD_UPDATED == 'true'
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+          GPG_PRIVATE_ID: ${{ secrets.GPG_PRIVATE_ID }}
+        run: |
+          gpg --batch --import <(echo "$GPG_PRIVATE_KEY")
+          git config --global commit.gpgsign true
+          git config --global user.name "kudo-sync-bot"
+          git config --global user.email "auto-sync@kudoai.com"
+          git config --global user.signingkey "$GPG_PRIVATE_ID"
+          git add docs/README.md
+          git commit -n -m "Updated downloads shield counter in root README"
+          git push
