@@ -80,7 +80,7 @@ def update_downloads_shield(readme_path: str, downloads: int) -> bool:
                 lines[idx] = new_line
                 shield_updated = True
                 print(f'»»» {new_line.strip()}\n')
-    if shield_updated: write_file(readme_path, lines)
+    if shield_updated : write_file(readme_path, lines)
     return shield_updated
 
 def main() -> None:
@@ -93,7 +93,6 @@ def main() -> None:
     print(f'{"TOTAL DOWNLOADS":30} {grand_total_dls:,}\n')
     print(f'Updating {README_PATH}...\n')
     shield_updated = update_downloads_shield(README_PATH, grand_total_dls)
-    print('Done!')
-    raise SystemExit(0 if shield_updated else 2)
+    print('Shield updated!' if shield_updated else 'No update needed.')
 
 if __name__ == '__main__' : main()
