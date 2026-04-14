@@ -36,7 +36,7 @@ def get_pkg_downloads(pkg: str, ecosystem: str = 'npm', max_retries: int = 5, ge
 def format_total(num: int) -> str:
     first_digit = str(num)[0] if num else '0'
     second_digit = str(num)[1] if num > 9 else '0'
-    second_digit_rounded = "0" if int(second_digit) < 5 else '5'
+    second_digit_rounded = '0' if int(second_digit) < 5 else '5'
     if num >= 1_000_000_000:
         formatted = f'{num // 1_000_000_000}'
         remainder = (num % 1_000_000_000) // 100_000_000
