@@ -62,7 +62,7 @@ print(ai_personas['Linux Terminal']['prompt'])
 
 ## 💻 Examples
 
-#### Node.js:
+#### JavaScript:
 
 <https://github.com/KudoAI/ai-personas/tree/main/node.js/#-examples>
 
