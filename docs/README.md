@@ -17,7 +17,7 @@ It's just a [JSON file](https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/da
 
 ## ⚡ Installation
 
-#### <a href="#"><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/icons/runtimes/node.js/icon25x28.png"></a> Node.js:
+#### <a href="#"><img height=14 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/icons/runtimes/node.js/icon25x28.png"></a> Node.js:
 
 From your project root:
 
@@ -38,7 +38,7 @@ npm install @kudoai/ai-personas
 // ==/UserScript==
 ```
 
-#### <a href="#"><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/icons/programming-languages/python/icon32.png"></a> Python:
+#### <a href="#"><img height=14 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/icons/programming-languages/python/icon32.png"></a> Python:
 
 ```bash
 pip install ai-personas
@@ -75,7 +75,7 @@ console.log(personas['Linux Terminal'].prompt)
 // => I want you to act as a linux terminal. I will type commands and you will...
 ```
 
-#### <a href="#"><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/icons/programming-languages/python/icon32.png"></a> Python:
+#### <a href="#"><img height=14 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/icons/programming-languages/python/icon32.png"></a> Python:
 
 ```py
 import ai_personas
@@ -99,7 +99,7 @@ print(ai_personas['Linux Terminal']['prompt'])
 <https://github.com/KudoAI/ai-personas/tree/main/node.js/#-examples>
 
 <details>
-<summary><strong><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/icons/programming-languages/python/icon32.png"> Python</strong></summary>
+<summary><strong><img height=14 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/icons/programming-languages/python/icon32.png"> Python</strong></summary>
 <br>
 
 > <a href="https://github.com/KudoAI/ai-personas/tree/main/python/#-examples">
