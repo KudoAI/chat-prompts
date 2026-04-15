@@ -28,7 +28,7 @@ npm install @kudoai/ai-personas
 <h4>
     <a href="#"><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/icons/userscript-managers/tampermonkey/icon28.png"><img height=15 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/icons/userscript-managers/violentmonkey/icon25.png"><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/icons/userscript-managers/scriptcat/icon32.png"></a> Greasemonkey:
 </h4>
- 
+
 ```js
 // ==UserScript==
 ...
