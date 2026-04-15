@@ -27,7 +27,7 @@ From your project root:
 npm install @kudoai/ai-personas
 ```
 
-<hr> 
+<hr>
 
 ## 🔌 Usage
 
