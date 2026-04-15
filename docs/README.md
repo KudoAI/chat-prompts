@@ -25,6 +25,17 @@ From your project root:
 npm install @kudoai/ai-personas
 ```
 
+#### Greasemonkey:
+
+```js
+// ==UserScript==
+...
+// @resource personas   https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@node.js-v1.1.0/data/ai-personas.json
+// @grant               GM_getResourceText
+...
+// ==/UserScript==
+```
+
 #### Python:
 
 ```bash
@@ -46,6 +57,15 @@ console.log(personas['Linux Terminal'].prompt)
 
 ```js
 const personas = require('@kudoai/ai-personas')
+
+console.log(personas['Linux Terminal'].prompt)
+// => I want you to act as a linux terminal. I will type commands and you will...
+```
+
+#### Greasemonkey:
+
+```js
+const personas = JSON.parse(GM_getResourceText('personas'))
 
 console.log(personas['Linux Terminal'].prompt)
 // => I want you to act as a linux terminal. I will type commands and you will...
