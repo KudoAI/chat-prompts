@@ -106,7 +106,7 @@ print(ai_personas['Linux Terminal']['prompt'])
 ## 💻 Examples
 
 <details>
-<summary><strong><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@7a49125/assets/images/icons/programming-languages/javascript/icon32.png"> JavaScript</strong></summary>
+<summary><strong><a href="#"><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@7a49125/assets/images/icons/programming-languages/javascript/icon32.png"></a> JavaScript</strong></summary>
 <br>
 
 <a href="https://github.com/KudoAI/ai-personas/tree/main/node.js/#-examples">
@@ -117,7 +117,7 @@ print(ai_personas['Linux Terminal']['prompt'])
 > <https://github.com/KudoAI/ai-personas/tree/main/node.js/#-examples>
 
 <details>
-<summary><strong><img height=14 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@7a49125/assets/images/icons/programming-languages/python/icon32.png"> Python</strong></summary>
+<summary><strong><a href="#"><img height=14 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@7a49125/assets/images/icons/programming-languages/python/icon32.png"></a> Python</strong></summary>
 <br>
 
 <a href="https://github.com/KudoAI/ai-personas/tree/main/python/#-examples">
