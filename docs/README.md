@@ -90,25 +90,23 @@ print(ai_personas['Linux Terminal']['prompt'])
 <summary><strong><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/icons/programming-languages/javascript/icon32.png"> JavaScript</strong></summary>
 <br>
 
-> <a href="https://github.com/KudoAI/ai-personas/tree/main/node.js/#-examples">
-> <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@c602023/node.js/assets/images/api-usage-examples.png">
-> </a>
+<a href="https://github.com/KudoAI/ai-personas/tree/main/node.js/#-examples">
+    <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@c602023/node.js/assets/images/api-usage-examples.png"></a>
 
 </details>
 
-<https://github.com/KudoAI/ai-personas/tree/main/node.js/#-examples>
+> <https://github.com/KudoAI/ai-personas/tree/main/node.js/#-examples>
 
 <details>
 <summary><strong><img height=14 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/icons/programming-languages/python/icon32.png"> Python</strong></summary>
 <br>
 
-> <a href="https://github.com/KudoAI/ai-personas/tree/main/python/#-examples">
-> <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@c602023/python/assets/images/api-usage-examples.png">
-> </a>
+<a href="https://github.com/KudoAI/ai-personas/tree/main/python/#-examples">
+    <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@c602023/python/assets/images/api-usage-examples.png"></a>
 
 </details>
 
-<https://github.com/KudoAI/ai-personas/tree/main/python/#-examples>
+> <https://github.com/KudoAI/ai-personas/tree/main/python/#-examples>
 
 ## 🏛️ License
 
