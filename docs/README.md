@@ -64,6 +64,7 @@ print(ai_personas['Linux Terminal']['prompt'])
 
 <details>
 <summary><strong>JavaScript</strong></summary>
+<br>
 
 > <a href="https://github.com/KudoAI/ai-personas/tree/main/node.js/#-examples">
 > <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@b005afa/node.js/assets/images/api-usage-examples.png">
@@ -75,6 +76,7 @@ print(ai_personas['Linux Terminal']['prompt'])
 
 <details>
 <summary><strong>Python</strong></summary>
+<br>
 
 > <a href="https://github.com/KudoAI/ai-personas/tree/main/python/#-examples">
 > <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@c602023/python/assets/images/api-usage-examples.png">
