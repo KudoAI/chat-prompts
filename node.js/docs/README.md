@@ -187,7 +187,7 @@ const messages = [
 
 🤖 [**ai-personas (Python)**](https://github.com/KudoAI/ai-personas/tree/main/python/#readme)
 
-#
+<a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@7da7074/assets/images/separators/aqua-gradient.png"></a>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@3ff8817/assets/images/icons/home/white/icon32x27.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@3ff8817/assets/images/icons/home/dark-gray/icon32x27.png"></picture> <a href=https://github.com/adamlui/js-utils/#readme>**More JavaScript utilities**</a> /
 <a href="https://github.com/KudoAI/ai-personas/discussions">Discuss</a> /
