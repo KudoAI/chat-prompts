@@ -15,6 +15,8 @@
 
 It's just a [JSON file](https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/data/ai-personas.json), so you can use it in any environment.
 
+<hr>
+
 ## ⚡ Installation
 
 #### <a href="#"><img height=14 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@7a49125/assets/images/icons/runtimes/node.js/icon25x28.png"></a> Node.js:
@@ -43,6 +45,8 @@ npm install @kudoai/ai-personas
 ```bash
 pip install ai-personas
 ```
+
+<hr>
 
 ## 🔌 Usage
 
@@ -97,6 +101,8 @@ print(ai_personas['Linux Terminal']['prompt'])
 # => I want you to act as a linux terminal. I will type commands and you will...
 ```
 
+<hr>
+
 ## 💻 Examples
 
 <details>
@@ -120,6 +126,8 @@ print(ai_personas['Linux Terminal']['prompt'])
 </details>
 
 > <https://github.com/KudoAI/ai-personas/tree/main/python/#-examples>
+
+<hr>
 
 ## 🏛️ License
 

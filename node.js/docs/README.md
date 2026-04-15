@@ -17,6 +17,8 @@
 
 It's just a [JSON file](https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@node.js-v1.1.0/data/ai-personas.json), so you can use it in any environment.
 
+<hr>
+
 ## ⚡ Installation
 
 From your project root:
@@ -24,6 +26,8 @@ From your project root:
 ```bash
 npm install @kudoai/ai-personas
 ```
+
+<hr> 
 
 ## 🔌 Usage
 
@@ -44,6 +48,8 @@ const personas = require('@kudoai/ai-personas')
 console.log(personas['Linux Terminal'].prompt)
 // => I want you to act as a linux terminal. I will type commands and you will...
 ```
+
+<hr>
 
 ## 💻 Examples
 
@@ -158,6 +164,8 @@ const messages = [
 ]
 ```
 
+<hr>
+
 ## 🏛️ License
 
 <table>
@@ -172,6 +180,8 @@ const messages = [
         <td>© 2026 <a href="https://www.kudoai.com">KudoAI</a> & contributors</td>
     </tr>
 </table>
+
+<hr>
 
 ## 📦 Related
 

@@ -17,11 +17,15 @@
 
 It's just a [JSON file](https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@python-v1.1.0/data/ai-personas.json), so you can use it in any environment.
 
+<hr>
+
 ## ⚡ Installation
 
 ```bash
 pip install ai-personas
 ```
+
+<hr>
 
 ## 🔌 Usage
 
@@ -33,6 +37,8 @@ print(ai_personas['Linux Terminal']['prompt'])
 ```
 
 _Note: Most type checkers will falsely warn_ `ai_personas` _is not subscriptable because they are incapable of analyzing runtime behavior (where the module is replaced w/ a dictionary for cleaner, direct access). You can safely suppress such warnings using_ `# type: ignore`.
+
+<hr>
 
 ## 💻 Examples
 
@@ -166,6 +172,8 @@ print(response.choices[0].message.content)
 # e.g. => UTC time: 15:23:42
 ```
 
+<hr>
+
 ## 🏛️ License
 
 <table>
@@ -180,6 +188,8 @@ print(response.choices[0].message.content)
         <td>© 2026 <a href="https://www.kudoai.com">KudoAI</a> & contributors</td>
     </tr>
 </table>
+
+<hr>
 
 ## 📦 Related
 
