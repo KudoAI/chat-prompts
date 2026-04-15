@@ -197,7 +197,39 @@ const messages = [
 
 ## 📦 Related
 
-🤖 [**ai-personas (Python)**](https://github.com/KudoAI/ai-personas/tree/main/python/#readme)
+<!-- GOOGLEGPT -->
+
+<details>
+<summary><strong><a href="#"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/KudoAI/googlegpt@94d5b04/assets/images/icons/app/white/icon32.png"><img width=15 src="https://cdn.jsdelivr.net/gh/KudoAI/googlegpt@94d5b04/assets/images/icons/app/black/icon32.png"></picture></a> GoogleGPT</strong>&nbsp;&nbsp;<a href="https://github.com/awesome-scripts/awesome-userscripts#chatgpt"><img width=105 height="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/googlegpt@94d5b04/assets/images/badges/awesome/badge.svg"></a></summary>
+<br>
+
+<a href="https://github.com/KudoAI/googlegpt/#readme">
+    <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/googlegpt@94d5b04/assets/images/screenshots/desktop/javascript-arrays-query/darkmode.png"></a>
+
+</details>
+
+> <a href="https://github.com/KudoAI/googlegpt/#-installation">Install</a> /
+> <a href="https://github.com/KudoAI/googlegpt/#readme">Readme</a> /
+> <a href="https://github.com/KudoAI/googlegpt/discussions">Discuss</a>
+
+<!-- DUCKDUCKGPT -->
+
+<details>
+<summary><strong><a href="#"><img height=16 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/duckduckgpt@2a48d2e/assets/images/icons/app/icon48.png"></a> DuckDuckGPT</strong>&nbsp;&nbsp;<a href="https://www.producthunt.com/posts/duckduckgpt?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-duckduckgpt"><img width=105 height="auto" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=379261&theme=light"></a></summary>
+<br>
+
+<a href="https://github.com/KudoAI/duckduckgpt/#readme">
+    <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/duckduckgpt@2a48d2e/assets/images/screenshots/desktop/how-to-becum-rich-query/lightmode.png"></a>
+
+</details>
+
+> <a href="https://github.com/KudoAI/duckduckgpt/#-installation">Install</a> /
+> <a href="https://github.com/KudoAI/duckduckgpt/#readme">Readme</a> /
+> <a href="https://github.com/KudoAI/duckduckgpt/discussions">Discuss</a>
+
+
+<!-- FOOTER -->
+
 
 <a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/separators/aqua-gradient.png"></a>
 
