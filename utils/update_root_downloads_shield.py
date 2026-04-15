@@ -11,8 +11,7 @@ def get_pkg_downloads(pkg: str, ecosystem: str = 'npm', max_retries: int = 5, ge
     from urllib.request import urlopen
     from urllib.error import HTTPError
 
-    api_url = PYPI_STATS_API_URL.format(pkg=pkg) if ecosystem == 'pypi' \
-         else NPM_STATS_API_URL.format(pkg=pkg)
+    api_url = (PYPI_STATS_API_URL if ecosystem == 'pypi' else NPM_STATS_API_URL).format(pkg=pkg)
 
     for idx in range(max_retries):
         try:
