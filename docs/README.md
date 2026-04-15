@@ -71,7 +71,8 @@ print(ai_personas['Linux Terminal']['prompt'])
 
 </details>
 
-<br><https://github.com/KudoAI/ai-personas/tree/main/node.js/#-examples>
+<https://github.com/KudoAI/ai-personas/tree/main/node.js/#-examples>
+
 <details>
 <summary><strong>Python</strong></summary>
 
@@ -81,7 +82,7 @@ print(ai_personas['Linux Terminal']['prompt'])
 
 </details>
 
-<br><https://github.com/KudoAI/ai-personas/tree/main/python/#-examples>
+<https://github.com/KudoAI/ai-personas/tree/main/python/#-examples>
 
 ## 🏛️ License
 
