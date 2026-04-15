@@ -64,6 +64,19 @@ console.log(personas['Linux Terminal'].prompt)
 // => I want you to act as a linux terminal. I will type commands and you will...
 ```
 
+<h4> <a href="#"><img height=14 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@7a49125/assets/images/icons/browsers/chrome/icon16.png"><img height=13.5 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@7a49125/assets/images/icons/browsers/edge/icon16.png"><img height=14 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@7a49125/assets/images/icons/browsers/firefox/icon16.png"><img height=14 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@7a49125/assets/images/icons/browsers/safari/icon16.png"><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@7a49125/assets/images/icons/browsers/qq/3d/icon-32x33.png"></a> Web: </h4>
+
+```html
+<script type="module">
+    const personas = await (await fetch(
+        'https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@node.js-v1.1.0/data/ai-personas.json'
+    )).json()
+
+    console.log(personas['Linux Terminal'].prompt)
+    // => I want you to act as a linux terminal. I will type commands and you will...
+</script>
+```
+
 <h4>
     <a href="#"><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@7a49125/assets/images/icons/userscript-managers/tampermonkey/icon28.png"><img height=15 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@7a49125/assets/images/icons/userscript-managers/violentmonkey/icon25.png"><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@7a49125/assets/images/icons/userscript-managers/scriptcat/icon32.png"></a> Greasemonkey:
 </h4>
