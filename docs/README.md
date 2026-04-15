@@ -62,6 +62,9 @@ print(ai_personas['Linux Terminal']['prompt'])
 
 ## 💻 Examples
 
+<a href="#">
+    <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@b005afa/node.js/assets/images/api-usage-examples.png"></a>
+
 #### JavaScript:
 
 <https://github.com/KudoAI/ai-personas/tree/main/node.js/#-examples>
