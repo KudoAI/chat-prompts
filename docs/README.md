@@ -17,7 +17,7 @@ It's just a [JSON file](https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/da
 
 ## ⚡ Installation
 
-#### <a href="#"><img height=14 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/icons/runtimes/node.js/icon25x28.png"></a> Node.js:
+#### <a href="#"><img height=14 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@7a49125/assets/images/icons/runtimes/node.js/icon25x28.png"></a> Node.js:
 
 From your project root:
 
@@ -26,7 +26,7 @@ npm install @kudoai/ai-personas
 ```
 
 <h4>
-    <a href="#"><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/icons/userscript-managers/tampermonkey/icon28.png"><img height=15 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/icons/userscript-managers/violentmonkey/icon25.png"><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/icons/userscript-managers/scriptcat/icon32.png"></a> Greasemonkey:
+    <a href="#"><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@7a49125/assets/images/icons/userscript-managers/tampermonkey/icon28.png"><img height=15 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@7a49125/assets/images/icons/userscript-managers/violentmonkey/icon25.png"><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@7a49125/assets/images/icons/userscript-managers/scriptcat/icon32.png"></a> Greasemonkey:
 </h4>
 
 ```js
@@ -38,7 +38,7 @@ npm install @kudoai/ai-personas
 // ==/UserScript==
 ```
 
-#### <a href="#"><img height=14 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/icons/programming-languages/python/icon32.png"></a> Python:
+#### <a href="#"><img height=14 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@7a49125/assets/images/icons/programming-languages/python/icon32.png"></a> Python:
 
 ```bash
 pip install ai-personas
@@ -46,7 +46,7 @@ pip install ai-personas
 
 ## 🔌 Usage
 
-#### <img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/icons/module-systems/esm/icon32.png"> ES Modules (ESM):
+#### <img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@7a49125/assets/images/icons/module-systems/esm/icon32.png"> ES Modules (ESM):
 
 ```js
 import personas from '@kudoai/ai-personas'
@@ -55,7 +55,7 @@ console.log(personas['Linux Terminal'].prompt)
 // => I want you to act as a linux terminal. I will type commands and you will...
 ```
 
-#### <img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/icons/module-systems/cjs/icon32.png"> CommonJS (CJS):
+#### <img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@7a49125/assets/images/icons/module-systems/cjs/icon32.png"> CommonJS (CJS):
 
 ```js
 const personas = require('@kudoai/ai-personas')
@@ -65,7 +65,7 @@ console.log(personas['Linux Terminal'].prompt)
 ```
 
 <h4>
-    <a href="#"><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/icons/userscript-managers/tampermonkey/icon28.png"><img height=15 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/icons/userscript-managers/violentmonkey/icon25.png"><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/icons/userscript-managers/scriptcat/icon32.png"></a> Greasemonkey:
+    <a href="#"><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@7a49125/assets/images/icons/userscript-managers/tampermonkey/icon28.png"><img height=15 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@7a49125/assets/images/icons/userscript-managers/violentmonkey/icon25.png"><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@7a49125/assets/images/icons/userscript-managers/scriptcat/icon32.png"></a> Greasemonkey:
 </h4>
 
 ```js
@@ -75,7 +75,7 @@ console.log(personas['Linux Terminal'].prompt)
 // => I want you to act as a linux terminal. I will type commands and you will...
 ```
 
-#### <a href="#"><img height=14 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/icons/programming-languages/python/icon32.png"></a> Python:
+#### <a href="#"><img height=14 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@7a49125/assets/images/icons/programming-languages/python/icon32.png"></a> Python:
 
 ```py
 import ai_personas
@@ -87,7 +87,7 @@ print(ai_personas['Linux Terminal']['prompt'])
 ## 💻 Examples
 
 <details>
-<summary><strong><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/icons/programming-languages/javascript/icon32.png"> JavaScript</strong></summary>
+<summary><strong><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@7a49125/assets/images/icons/programming-languages/javascript/icon32.png"> JavaScript</strong></summary>
 <br>
 
 <a href="https://github.com/KudoAI/ai-personas/tree/main/node.js/#-examples">
@@ -98,7 +98,7 @@ print(ai_personas['Linux Terminal']['prompt'])
 > <https://github.com/KudoAI/ai-personas/tree/main/node.js/#-examples>
 
 <details>
-<summary><strong><img height=14 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/icons/programming-languages/python/icon32.png"> Python</strong></summary>
+<summary><strong><img height=14 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@7a49125/assets/images/icons/programming-languages/python/icon32.png"> Python</strong></summary>
 <br>
 
 <a href="https://github.com/KudoAI/ai-personas/tree/main/python/#-examples">
