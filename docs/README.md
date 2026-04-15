@@ -32,8 +32,8 @@ npm install @kudoai/ai-personas
 ```js
 // ==UserScript==
 ...
-// @resource personas   https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@node.js-v1.1.0/data/ai-personas.json
-// @grant               GM_getResourceText
+// @resource ai-personas   https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@node.js-v1.1.0/data/ai-personas.json
+// @grant                  GM_getResourceText
 ...
 // ==/UserScript==
 ```
@@ -69,7 +69,7 @@ console.log(personas['Linux Terminal'].prompt)
 </h4>
 
 ```js
-const personas = JSON.parse(GM_getResourceText('personas'))
+const personas = JSON.parse(GM_getResourceText('ai-personas'))
 
 console.log(personas['Linux Terminal'].prompt)
 // => I want you to act as a linux terminal. I will type commands and you will...
