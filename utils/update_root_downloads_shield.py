@@ -88,7 +88,7 @@ def main() -> None:
     grand_total_dls = pypi_downloads + npm_downloads
     print(f'{PYPI_PKG:30} {pypi_downloads:,}')
     print(f'{NPM_PKG:30} {npm_downloads:,}')
-    print('-' * 45)
+    print('-' *45)
     print(f'{"TOTAL DOWNLOADS":30} {grand_total_dls:,}\n')
     print(f'Updating {README_PATH}...\n')
     shield_updated = update_downloads_shield(README_PATH, grand_total_dls)
