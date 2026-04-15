@@ -28,9 +28,9 @@ echo ''
 echo -e "${BY}Bumping versions in ./package*.json...${BW}"
 npm version --no-git-tag-version "$new_ver"
 
-echo -e "${BY}\nBumping versions in ../**/README.md...${BW}"
-find ../ -name 'README.md' -exec sed -i -E \
--e "s/([-v])([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})/\1$new_ver/g" {} +
+echo -e "${BY}\nBumping versions in **/README.md...${BW}"
+find . -name 'README.md' -exec sed -i -E \
+    "s/([-v])([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})/\1$new_ver/g" {} +
 echo "v$new_ver"
 
 echo -e "${BY}\nChanging Git author/committer to kudo-sync-bot...\n${NC}"
