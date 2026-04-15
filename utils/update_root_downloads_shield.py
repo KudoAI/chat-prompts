@@ -3,7 +3,7 @@ NPM_PKG = '@kudoai/ai-personas'
 README_PATH = 'docs/README.md'
 
 PYPI_STATS_API_URL = 'https://pypistats.org/api/packages/{pkg}/overall'
-NPM_STATS_API_URL = 'https://api.npmjs.org/downloads/point/last-month/{pkg}'
+NPM_STATS_API_URL = 'https://api.npmjs.org/downloads/point/0000-01-01:9999-12-31/{pkg}'
 
 def get_pkg_downloads(pkg: str, ecosystem: str = 'npm', max_retries: int = 5, get_delay: int = 1) -> int:
     import json
