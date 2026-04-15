@@ -66,6 +66,8 @@ console.log(findPersonas('coach'))
 // => ['Interview Preparation Coach', 'Life Coach', ...]
 ```
 
+#
+
 #### Get prompt for a persona:
 
 ```js
@@ -74,6 +76,8 @@ function getPrompt(persona) { return personas[persona].prompt }
 console.log(getPrompt('Food Critic'))
 // => I want you to act as a food critic. I will tell you about a restaurant...
 ```
+
+#
 
 #### Get random personas:
 
@@ -90,6 +94,8 @@ console.log(randomPersona())
 console.log(randomPersona(10))
 // => e.g. ['Internet Trend & Slang Intelligence', 'Tic-Tac-Toe Game', ...]
 ```
+
+#
 
 #### Get random prompt:
 
@@ -114,6 +120,8 @@ Your task is to:
 **/
 ```
 
+#
+
 #### Fill variables in template prompts:
 
 ```js
@@ -129,6 +137,8 @@ Your task is to:
 ...
 **/
 ```
+
+#
 
 #### Combine prompts:
 
@@ -152,6 +162,8 @@ Prompt A: I want you to act as a linux terminal...
 Prompt B: I want you to act as a DAX terminal...
 **/
 ```
+
+#
 
 #### Build system prompt:
 

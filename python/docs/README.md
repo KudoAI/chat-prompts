@@ -55,6 +55,8 @@ print(find_personas('coach'))
 # => ['Interview Preparation Coach', 'Life Coach', ...]
 ```
 
+#
+
 #### Get prompt for a persona:
 
 ```py
@@ -64,6 +66,8 @@ def get_prompt(persona):
 print(get_prompt('Food Critic'))
 # => I want you to act as a food critic. I will tell you about a restaurant...
 ```
+
+#
 
 #### Get random personas:
 
@@ -79,6 +83,8 @@ print(random_persona())
 print(random_persona(10))
 # => e.g. ['Internet Trend & Slang Intelligence', 'Tic-Tac-Toe Game', ...]
 ```
+
+#
 
 #### Get random prompt:
 
@@ -102,6 +108,8 @@ print(random_prompt())
 # ...
 ```
 
+#
+
 #### Fill variables in template prompts:
 
 ```py
@@ -116,6 +124,8 @@ print(filled_prompt)
 # - Write efficient Node.js scripts to automate web scraping.
 # ...
 ```
+
+#
 
 #### Combine prompts:
 
@@ -139,6 +149,8 @@ print(mega_prompt)
 # Prompt B: I want you to act as a DAX terminal...
 ```
 
+#
+
 #### Build system prompt:
 
 ```py
@@ -149,6 +161,8 @@ messages = [
     {'role': 'user', 'content': 'Create a weekly study plan for calculus'}
 ]
 ```
+
+#
 
 #### Use persona w/ an LLM:
 
