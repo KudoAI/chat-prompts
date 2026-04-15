@@ -34,7 +34,7 @@ npm install @kudoai/ai-personas
 ```js
 // ==UserScript==
 ...
-// @resource ai-personas   https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@node.js-v1.1.0/data/ai-personas.json
+// @resource ai-personas   https://cdn.jsdelivr.net/npm/@kudoai/ai-personas@1/dist/ai-personas.min.json
 // @grant                  GM_getResourceText
 ...
 // ==/UserScript==
@@ -73,7 +73,7 @@ console.log(personas['Linux Terminal'].prompt)
 ```html
 <script type="module">
     const personas = await (await fetch(
-        'https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@node.js-v1.1.0/data/ai-personas.json'
+        'https://cdn.jsdelivr.net/npm/@kudoai/ai-personas@1/dist/ai-personas.min.json'
     )).json()
 
     console.log(personas['Linux Terminal'].prompt)
