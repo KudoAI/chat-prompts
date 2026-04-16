@@ -146,6 +146,13 @@ print(ai_personas['Linux Terminal']['prompt'])
 
 <hr>
 
+## 🧠 Contributors
+
+<a href="https://github.com/KudoAI/ai-personas/graphs/contributors">
+    <img height=50 width="auto" src="https://contrib.rocks/image?repo=KudoAI/ai-personas" /></a>
+
+<hr>
+
 ## 📦 Related
 
 <!-- GOOGLEGPT -->
