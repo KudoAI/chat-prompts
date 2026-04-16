@@ -200,7 +200,7 @@ const messages = [
 ## 🧠 Contributors
 
 <a href="https://github.com/KudoAI/ai-personas/graphs/contributors">
-    <img height=45 width="auto" src="https://contrib.rocks/image?repo=KudoAI/ai-personas" /></a>
+    <img height=45 width="auto" src="https://contrib.rocks/image?repo=KudoAI/ai-personas&anon=1" /></a>
 <br><br>
 
 All contributions are very welcome!
