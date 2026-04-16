@@ -7,8 +7,7 @@ const persona = {
 
     fillPrompt(personas, name, vars = {}) {
         let prompt = personas[name]?.prompt || ''
-        for (const key in vars)
-            prompt = prompt.replaceAll(`\${${key}}`, vars[key])
+        for (const key in vars) prompt = prompt.replaceAll(`\${${key}}`, vars[key])
         return prompt
     },
 
