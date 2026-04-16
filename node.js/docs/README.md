@@ -33,7 +33,7 @@ npm install @kudoai/ai-personas
 
 ## 🔌 Usage
 
-#### <img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@a669c5d/assets/images/icons/module-systems/esm/icon32.png"> ES Modules (ESM):
+#### <img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@dbdea4b/assets/images/icons/module-systems/esm/icon32.png"> ES Modules (ESM):
 
 ```js
 import personas from '@kudoai/ai-personas'
@@ -42,7 +42,7 @@ console.log(personas['Linux Terminal'].prompt)
 // => I want you to act as a linux terminal. I will type commands and you will...
 ```
 
-#### <img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@a669c5d/assets/images/icons/module-systems/cjs/icon32.png"> CommonJS (CJS):
+#### <img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@dbdea4b/assets/images/icons/module-systems/cjs/icon32.png"> CommonJS (CJS):
 
 ```js
 const personas = require('@kudoai/ai-personas')
