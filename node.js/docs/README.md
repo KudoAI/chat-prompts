@@ -9,8 +9,7 @@
 <a href="#%EF%B8%8F-license">
     <img height=31 src="https://img.shields.io/badge/License-CC0--1.0/MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/KudoAI/ai-personas/releases/tag/node.js-v1.2.0">
-    <img height=31 src="https://img.shields.io/bundlejs/size/%40kudoai%2Fai-personas
-    ?branch=node-v1.2.0&label=Minified%20Size&logo=databricks&logoColor=white&labelColor=464646&color=ff69b4&style=for-the-badge"></a>
+    <img height=31 src="https://img.shields.io/bundlejs/size/%40kudoai%2Fai-personas?branch=node-v1.2.0&label=Minified%20Size&logo=databricks&logoColor=white&labelColor=464646&color=ff69b4&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/KudoAI/ai-personas">
     <img height=31 src="https://img.shields.io/codefactor/grade/github/KudoAI/ai-personas?label=Code+Quality&logo=codefactor&logoColor=white&labelColor=464646&color=a0fc55&style=for-the-badge"></a>
 <a href="https://sonarcloud.io/component_measures?metric=vulnerabilities&selected=KudoAI_ai-personas%3Anode.js&id=KudoAI_ai-personas">
