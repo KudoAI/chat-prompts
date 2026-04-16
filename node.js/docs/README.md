@@ -199,6 +199,9 @@ const messages = [
 
 <a href="https://github.com/KudoAI/ai-personas/graphs/contributors">
     <img height=45 width="auto" src="https://contrib.rocks/image?repo=KudoAI/ai-personas" /></a>
+<br><br>
+
+All contributions are very welcome!
 
 <hr>
 
