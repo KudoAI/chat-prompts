@@ -131,22 +131,22 @@ print(filled_prompt)
 
 ```py
 mega_prompt = f'''
-When I start w/ sh: follow prompt A. When I start w/ dax: follow prompt B.
+When I start w/ sh: follow prompt A. When I start w/ win: follow prompt B.
 
 Prompt A: {ai_personas['Linux Terminal']['prompt']}
 
-Prompt B: {ai_personas['DAX Terminal']['prompt']}
+Prompt B: {ai_personas['Windows Terminal']['prompt']}
 '''
 
 print(mega_prompt)
 
 # =>
 #
-# When I start w/ sh: follow prompt A. When I start w/ dax: follow prompt B.
+# When I start w/ sh: follow prompt A. When I start w/ win: follow prompt B.
 #
 # Prompt A: I want you to act as a linux terminal...
 #
-# Prompt B: I want you to act as a DAX terminal...
+# Prompt B: I want you to act as a Windows Terminal...
 ```
 
 #

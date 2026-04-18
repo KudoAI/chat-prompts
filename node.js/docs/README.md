@@ -144,22 +144,22 @@ Your task is to:
 
 ```js
 const megaPrompt = `
-When I start w/ sh: follow prompt A. When I start w/ dax: follow prompt B.
+When I start w/ sh: follow prompt A. When I start w/ win: follow prompt B.
 
 Prompt A: ${personas['Linux Terminal'].prompt}
 
-Prompt B: ${personas['DAX Terminal'].prompt}
+Prompt B: ${personas['Windows Terminal'].prompt}
 `
 
 console.log(megaPrompt)
 
 /** =>
 
-When I start w/ sh: follow prompt A. When I start w/ dax: follow prompt B.
+When I start w/ sh: follow prompt A. When I start w/ win: follow prompt B.
 
 Prompt A: I want you to act as a linux terminal...
 
-Prompt B: I want you to act as a DAX terminal...
+Prompt B: I want you to act as a Windows Terminal...
 **/
 ```
 
