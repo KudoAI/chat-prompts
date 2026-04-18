@@ -28,7 +28,7 @@ npm install @kudoai/ai-personas
 ```
 
 <h4>
-    <a href="#"><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/tampermonkey/icon28.png"><img height=15 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/violentmonkey/icon25.png"><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/scriptcat/icon32.png"></a> Greasemonkey:
+    <a href="#" title="Tampermonkey"><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/tampermonkey/icon28.png"></a><a href="#" title="Violentmonkey"><img height=15 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/violentmonkey/icon25.png"></a><a href="#" title="ScriptCat"><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/scriptcat/icon32.png"></a><a href="#" title="OrangeMonkey"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/orangemonkey/icon16.png"></a><a href="#" title="Stay"><img height=14 src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/stay/icon32.png"></a><a href="#" title="Userscripts"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/userscripts/icon32.png"></a> Greasemonkey:
 </h4>
 
 ```js
@@ -82,7 +82,7 @@ console.log(personas['Linux Terminal'].prompt)
 ```
 
 <h4>
-    <a href="#"><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/tampermonkey/icon28.png"><img height=15 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/violentmonkey/icon25.png"><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/scriptcat/icon32.png"></a> Greasemonkey:
+    <a href="#" title="Tampermonkey"><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/tampermonkey/icon28.png"></a><a href="#" title="Violentmonkey"><img height=15 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/violentmonkey/icon25.png"></a><a href="#" title="ScriptCat"><img height=13 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/scriptcat/icon32.png"></a><a href="#" title="OrangeMonkey"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/orangemonkey/icon16.png"></a><a href="#" title="Stay"><img height=14 src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/stay/icon32.png"></a><a href="#" title="Userscripts"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/userscripts/icon32.png"></a> Greasemonkey:
 </h4>
 
 ```js
