@@ -31,7 +31,6 @@ npm install @kudoai/ai-personas
 
 [greasemonkey-install]: #-greasemonkey
 
-
 ```js
 // ==UserScript==
 ...
