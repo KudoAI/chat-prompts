@@ -29,5 +29,5 @@ const persona = {
         return Object.values(personas).sort(() => 0.5 - Math.random())[0]?.prompt }
 }
 
-try { module.exports = persona } catch (err) {} // for Node.js
-try { Object.assign(globalThis, persona) } catch (err) {} // for browsers
+if (typeof module == 'object' && module.exports) module.exports = persona // for Node.js
+else Object.assign(globalThis, persona) // for browsers/workers/etc.
