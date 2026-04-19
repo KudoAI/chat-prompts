@@ -163,12 +163,13 @@ All contributions are very welcome!
 <!-- GOOGLEGPT -->
 
 <details>
-<summary><strong><a href="#"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/KudoAI/googlegpt@94d5b04/assets/images/icons/app/white/icon32.png"><img width=15 src="https://cdn.jsdelivr.net/gh/KudoAI/googlegpt@94d5b04/assets/images/icons/app/black/icon32.png"></picture></a> GoogleGPT</strong>&nbsp;&nbsp;<a href="https://github.com/awesome-scripts/awesome-userscripts#chatgpt"><img width=105 height="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/googlegpt@94d5b04/assets/images/badges/awesome/badge.svg"></a></summary>
-<br>
-
-<a href="https://github.com/KudoAI/googlegpt/#readme">
-    <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/googlegpt@94d5b04/assets/images/screenshots/desktop/javascript-arrays-query/darkmode.png"></a>
-
+    <summary>
+        <strong><a href="#"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/KudoAI/googlegpt@94d5b04/assets/images/icons/app/white/icon32.png"><img width=15 src="https://cdn.jsdelivr.net/gh/KudoAI/googlegpt@94d5b04/assets/images/icons/app/black/icon32.png"></picture></a> GoogleGPT</strong>&nbsp;&nbsp;<a href="https://github.com/awesome-scripts/awesome-userscripts#chatgpt"><img width=105 height="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/googlegpt@94d5b04/assets/images/badges/awesome/badge.svg"></a>
+    </summary>
+    <br>
+    <a href="https://github.com/KudoAI/googlegpt/#readme">
+        <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/googlegpt@94d5b04/assets/images/screenshots/desktop/javascript-arrays-query/darkmode.png">
+    </a>
 </details>
 
 > [<img height="13" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/tampermonkey/icon28.png" title="Tampermonkey">][googlegpt-install][<img height="15" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/violentmonkey/icon25.png" title="Violentmonkey">][googlegpt-install][<img height="13" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/scriptcat/icon32.png" title="ScriptCat">][googlegpt-install][<img height="13" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/orangemonkey/icon16.png" title="OrangeMonkey">][googlegpt-install][<img height="14" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/stay/icon32.png" title="Stay">][googlegpt-install][<img height="13" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/userscripts/icon32.png" title="Userscripts">][googlegpt-install]
@@ -183,12 +184,13 @@ All contributions are very welcome!
 <!-- DUCKDUCKGPT -->
 
 <details>
-<summary><strong><a href="#"><img height=16 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/duckduckgpt@2a48d2e/assets/images/icons/app/icon48.png"></a> DuckDuckGPT</strong>&nbsp;&nbsp;<a href="https://www.producthunt.com/posts/duckduckgpt?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-duckduckgpt"><img width=105 height="auto" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=379261&theme=light"></a></summary>
-<br>
-
-<a href="https://github.com/KudoAI/duckduckgpt/#readme">
-    <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/duckduckgpt@2a48d2e/assets/images/screenshots/desktop/how-to-becum-rich-query/lightmode.png"></a>
-
+    <summary>
+        <strong><a href="#"><img height=16 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/duckduckgpt@2a48d2e/assets/images/icons/app/icon48.png"></a> DuckDuckGPT</strong>&nbsp;&nbsp;<a href="https://www.producthunt.com/posts/duckduckgpt?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-duckduckgpt"><img width=105 height="auto" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=379261&theme=light"></a>
+    </summary>
+    <br>
+    <a href="https://github.com/KudoAI/duckduckgpt/#readme">
+        <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/duckduckgpt@2a48d2e/assets/images/screenshots/desktop/how-to-becum-rich-query/lightmode.png">
+    </a>
 </details>
 
 > [<img height="13" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/tampermonkey/icon28.png" title="Tampermonkey">][googlegpt-install][<img height="15" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/violentmonkey/icon25.png" title="Violentmonkey">][ddgpt-install][<img height="13" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/scriptcat/icon32.png" title="ScriptCat">][ddgpt-install][<img height="13" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/orangemonkey/icon16.png" title="OrangeMonkey">][ddgpt-install][<img height="14" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/stay/icon32.png" title="Stay">][ddgpt-install][<img height="13" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/userscripts/icon32.png" title="Userscripts">][ddgpt-install]
