@@ -263,6 +263,29 @@ All contributions are very welcome!
 [googlegpt-readme]: https://github.com/KudoAI/googlegpt/#readme
 [googlegpt-discuss]: https://github.com/KudoAI/googlegpt/discussions
 
+<!-- AI-PERSONAS (PYTHON) -->
+
+<details>
+    <summary><b>ai-personas (Node.js)</b></summary>
+    <br>
+    <a href="https://github.com/KudoAI/ai-personas/tree/main/python/#readme">
+        <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@19c0426/assets/images/screenshots/dataset-preview.png">
+    </a>
+</details>
+
+> [<img height=14 width="auto" src="https://cdn.jsdelivr.net/gh//adamlui/js-utils@dbdea4b/assets/images/icons/runtimes/node.js/icon25x28.png">][ap-node.js-install]
+> [Install][ap-node.js-install] /
+> [<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/userscripts@13443c3/assets/images/icons/paper-sheet/white.svg"><img height="13" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@13443c3/assets/images/icons/paper-sheet/black.svg"></picture>][ap-node.js-readme]
+> [Readme][ap-node.js-readme] /
+> 🔌 [API usage][ap-node.js-api-usage] /
+> [<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/userscripts@13443c3/assets/images/icons/speech-bubble-square/white.svg"><img height="12.5" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@13443c3/assets/images/icons/speech-bubble-square/black.svg"></picture>][ap-node.js-discuss]
+> [Discuss][ap-node.js-discuss]
+
+[ap-node.js-install]: https://github.com/KudoAI/ai-personas/tree/main/node.js/#-installation
+[ap-node.js-readme]: https://github.com/KudoAI/ai-personas/tree/main/node.js/#readme
+[ap-node.js-api-usage]: https://github.com/KudoAI/ai-personas/tree/main/node.js/#-usage
+[ap-node.js-discuss]: https://github.com/KudoAI/ai-personas/discussions
+
 
 <!-- FOOTER -->
 

@@ -253,6 +253,29 @@ All contributions are very welcome!
 [ddgpt-readme]: https://github.com/KudoAI/duckduckgpt/#readme
 [ddgpt-discuss]: https://github.com/KudoAI/duckduckgpt/discussions
 
+<!-- AI-PERSONAS (PYTHON) -->
+
+<details>
+    <summary><b>ai-personas (Python)</b></summary>
+    <br>
+    <a href="https://github.com/KudoAI/ai-personas/tree/main/python/#readme">
+        <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@19c0426/assets/images/screenshots/dataset-preview.png">
+    </a>
+</details>
+
+> [<img height=14 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b110c1e/assets/images/icons/python/icon32.png">][ap-py-install]
+> [Install][ap-py-install] /
+> [<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/userscripts@13443c3/assets/images/icons/paper-sheet/white.svg"><img height="13" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@13443c3/assets/images/icons/paper-sheet/black.svg"></picture>][ap-py-readme]
+> [Readme][ap-py-readme] /
+> 🔌 [API usage][ap-py-api-usage] /
+> [<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/userscripts@13443c3/assets/images/icons/speech-bubble-square/white.svg"><img height="12.5" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@13443c3/assets/images/icons/speech-bubble-square/black.svg"></picture>][ap-py-discuss]
+> [Discuss][ap-py-discuss]
+
+[ap-py-install]: https://github.com/KudoAI/ai-personas/tree/main/python/#-installation
+[ap-py-readme]: https://github.com/KudoAI/ai-personas/tree/main/python/#readme
+[ap-py-api-usage]: https://github.com/KudoAI/ai-personas/tree/main/python/#-usage
+[ap-py-discuss]: https://github.com/KudoAI/ai-personas/discussions
+
 
 <!-- FOOTER -->
 
