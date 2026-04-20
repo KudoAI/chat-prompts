@@ -15,7 +15,7 @@
 
 > ### _1,200+ AI personas for LLMs and agents._
 
-It's just a [JSON file](https://cdn.jsdelivr.net/npm/@kudoai/ai-personas@1/dist/ai-personas.json), so you can use it in any environment.
+It's just a [JSON file](https://cdn.jsdelivr.net/npm/@kudoai/ai-personas@1.2.0/dist/ai-personas.json), so you can use it in any environment.
 
 <a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/separators/aqua-gradient.png"></a>
 
