@@ -282,8 +282,11 @@ All contributions are very welcome!
 
 <a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/separators/aqua-gradient.png"></a>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/icons/home/white/icon32x27.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/icons/home/dark-gray/icon32x27.png"></picture> <a href=https://github.com/adamlui/js-utils/#readme>**More JavaScript utilities**</a> /
+[<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/adamlui/js-utils@21bf981/assets/images/icons/home/white/icon32x27.png"><img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@21bf981/assets/images/icons/home/dark-gray/icon32x27.png"></picture>][js-utils]
+[**More JavaScript utilities**][js-utils] /
 <a href="https://github.com/KudoAI/ai-personas/discussions">Discuss</a> /
 <a href="https://github.com/KudoAI/ai-personas/issues">Report bug</a> /
 <a href="mailto:security@tidelift.com">Report vulnerability</a> /
 <a href="#top">Back to top ↑</a>
+
+[js-utils]: https://github.com/adamlui/js-utils/#readme
