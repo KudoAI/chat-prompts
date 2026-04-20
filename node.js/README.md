@@ -63,7 +63,7 @@ function findPersonas(keyword) {
 }
 
 console.log(findPersonas('coach'))
-// => ['Interview Preparation Coach', 'Life Coach', ...]
+// => [ 'Interview Preparation Coach', 'Life Coach', ... ]
 ```
 
 #
@@ -92,7 +92,7 @@ console.log(randomPersona())
 // => e.g. Reverse Prompt Engineer
 
 console.log(randomPersona(10))
-// => e.g. ['Internet Trend & Slang Intelligence', 'Tic-Tac-Toe Game', ...]
+// => e.g. [ 'Internet Trend & Slang Intelligence', 'Tic-Tac-Toe Game', ... ]
 ```
 
 #
