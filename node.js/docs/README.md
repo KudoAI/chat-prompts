@@ -215,7 +215,7 @@ All contributions are very welcome!
     </summary>
     <br>
     <a href="https://github.com/KudoAI/googlegpt/#readme">
-        <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/googlegpt@94d5b04/assets/images/screenshots/desktop/javascript-arrays-query/darkmode.png">
+        <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/googlegpt@latest/assets/images/screenshots/desktop/javascript-arrays-query/darkmode.png">
     </a>
 </details>
 
@@ -238,7 +238,7 @@ All contributions are very welcome!
     </summary>
     <br>
     <a href="https://github.com/KudoAI/duckduckgpt/#readme">
-        <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/duckduckgpt@2a48d2e/assets/images/screenshots/desktop/how-to-becum-rich-query/lightmode.png">
+        <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/duckduckgpt@latest/assets/images/screenshots/desktop/how-to-becum-rich-query/lightmode.png">
     </a>
 </details>
 
@@ -259,7 +259,7 @@ All contributions are very welcome!
     <summary><b>ai-personas (Python)</b></summary>
     <br>
     <a href="https://github.com/KudoAI/ai-personas/tree/main/python/#readme">
-        <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@19c0426/assets/images/screenshots/dataset-preview.png">
+        <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/screenshots/dataset-preview.png">
     </a>
 </details>
 
