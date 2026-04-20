@@ -1,15 +1,15 @@
-name: Lint pushes + PRs
+name: Lint pushes/PRs
 on: [push, pull_request]
 
 jobs:
-  lint-all:
-    name: Lint all files
+  lint:
     runs-on: ubuntu-24.04
     permissions:
       contents: read
 
     steps:
-      - name: Checkout repository
+
+      - name: Checkout repository code
         uses: actions/checkout@v6.0.2
 
       - name: Set up Python
