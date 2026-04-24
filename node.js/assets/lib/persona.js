@@ -6,18 +6,12 @@
 const persona = {
 
     extractPlaceholders(prompt) {
-        const placeholders = prompt.match(/\$\{(.*?)\}/g)
-        return !placeholders ? [] : [...new Set(placeholders.map(match => match.slice(2, -1)))]
+        const matches = prompt.match(/\$\{(.*?)\}/g)
+        return matches ? [...new Set(matches.map(m => m.slice(2, -1)))] : []
     },
 
-    fillVars(prompt, placeholders, vals = {}) {
-        let filledPrompt = prompt
-        placeholders.forEach(name => {
-            if (name in vals)
-                filledPrompt = filledPrompt.replaceAll(`\${${name}}`, vals[name])
-        })
-        return filledPrompt
-    },
+    fillVars(prompt, vals = {}) {
+        return prompt.replace(/\$\{(.*?)\}/g, (_, key) => vals[key] ?? `\${${key}}`) },
 
     find(personas, keyword) {
         return Object.entries(personas)

@@ -177,22 +177,17 @@ Your task is to:
 
 ```js
 function extractPlaceholders(prompt) {
-    const placeholders = prompt.match(/\$\{(.*?)\}/g)
-    return !placeholders ? [] : [...new Set(placeholders.map(match => match.slice(2, -1)))]
+    const matches = prompt.match(/\$\{(.*?)\}/g)
+    return matches ? [...new Set(matches.map(m => m.slice(2, -1)))] : []
 }
 
-function fillVarsInPrompt(prompt, placeholders, vals = {}) {
-    let filledPrompt = prompt
-    placeholders.forEach(name => {
-        if (name in vals)
-            filledPrompt = filledPrompt.replaceAll(`\${${name}}`, vals[name])
-    })
-    return filledPrompt
+function fillVarsInPrompt(prompt, vals = {}) {
+    return prompt.replace(/\$\{(.*?)\}/g, (_, key) => vals[key] ?? `\${${key}}`)
 }
 
 const prompt = personas['Node.js Automation Script Developer'].prompt,
       placeholders = extractPlaceholders(prompt),  
-      filledPrompt = fillVarsInPrompt(prompt, placeholders, { taskType: 'web scraping' })
+      filledPrompt = fillVarsInPrompt(prompt, { taskType: 'web scraping' })
 
 console.log(filledPrompt)
 
