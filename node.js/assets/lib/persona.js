@@ -5,7 +5,7 @@
 
 const persona = {
 
-    fillVars(prompt, vals = {}) {
+    fillVarsInTemplate(prompt, vals = {}) {
         return prompt.replace(/\$\{(.*?)\}/g, (_, key) => vals[key] ?? `\${${key}}`) },
 
     find(personas, keyword) {
