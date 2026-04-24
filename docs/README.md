@@ -1,6 +1,8 @@
 <a id="top"></a>
 
-# <a href="https://github.com/KudoAI"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/KudoAI/kudoai.com@255f8fd/assets/images/icons/kudoai/white-on-black/icon400.png"></picture><img height=40 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/kudoai.com@255f8fd/assets/images/icons/kudoai/black-on-white/icon400.png"></a>KudoAI / ai-personas
+<div align="center">
+
+# <a href="https://github.com/KudoAI"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/KudoAI/kudoai.com@255f8fd/assets/images/icons/kudoai/white-on-black/icon400.png"></picture><img height=155 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/kudoai.com@255f8fd/assets/images/icons/kudoai/black-on-white/icon400.png"></a><br>> KudoAI / ai-personas
 
 <a href="#">
     <img height=31 src="https://img.shields.io/badge/Downloads-3.3k-af68ff.svg?logo=weightsandbiases&logoColor=white&labelColor=464646&style=for-the-badge"></a>
@@ -12,6 +14,8 @@
     <img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3DKudoAI_ai-personas%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonar&logoColor=white&labelColor=464646&label=Vulnerabilities&color=gold"></a>
 <a href="https://www.jsdelivr.com/package/gh/KudoAI/ai-personas?tab=stats">
     <img alt="[jsDelivr stats]" src="https://img.shields.io/jsdelivr/gh/hm/KudoAI/ai-personas?style=for-the-badge&logo=jsdelivr&logoColor=white&label=jsDelivr%20Requests&labelColor=464646&color=2bbbd8"></a>
+
+</div>
 
 > ### _1,200+ AI personas for LLMs and agents._
 
