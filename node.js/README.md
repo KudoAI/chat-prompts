@@ -300,7 +300,7 @@ All contributions are very welcome!
 
 <!-- AI-PERSONAS (PYTHON) -->
 
-**🤖 ai-personas (Python)**
+#### 🤖 ai-personas (Python)
 
 > [<img height=14 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b110c1e/assets/images/icons/python/icon32.png">][ap-py-install]
 > [Install][ap-py-install] /
