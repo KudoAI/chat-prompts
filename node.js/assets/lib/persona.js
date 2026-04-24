@@ -27,4 +27,4 @@ const persona = {
 }
 
 if (typeof module == 'object' && module.exports) module.exports = persona // for Node.js
-else Object.assign(globalThis, persona) // for browsers/workers/etc.
+else Object.assign(globalThis, persona); // for browsers/workers/etc.
