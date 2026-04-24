@@ -23,10 +23,25 @@ It's just a [JSON file](https://cdn.jsdelivr.net/npm/@kudoai/ai-personas@1.3.0/d
 
 ## ⚡ Installation
 
+#### <a href="#-nodejs"><img height=14 width="auto" src="https://cdn.jsdelivr.net/gh//adamlui/js-utils@dbdea4b/assets/images/icons/runtimes/node.js/icon25x28.png"></a> Node.js:
+
 From your project root:
 
 ```bash
 npm install @kudoai/ai-personas
+```
+
+#### [<img height="13" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/tampermonkey/icon28.png" title="Tampermonkey">][greasemonkey-install][<img height="15" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/violentmonkey/icon25.png" title="Violentmonkey">][greasemonkey-install][<img height="13" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/scriptcat/icon32.png" title="ScriptCat">][greasemonkey-install][<img height="13" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/orangemonkey/icon16.png" title="OrangeMonkey">][greasemonkey-install][<img height="14" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/stay/icon32.png" title="Stay">][greasemonkey-install][<img height="13" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/userscripts/icon32.png" title="Userscripts">][greasemonkey-install] Greasemonkey:
+
+[greasemonkey-install]: #-greasemonkey
+
+```js
+// ==UserScript==
+...
+// @resource ai-personas   https://cdn.jsdelivr.net/npm/@kudoai/ai-personas@1/dist/ai-personas.min.json
+// @grant                  GM_getResourceText
+...
+// ==/UserScript==
 ```
 
 <hr>
@@ -46,6 +61,32 @@ console.log(personas['Linux Terminal'].prompt)
 
 ```js
 const personas = require('@kudoai/ai-personas')
+
+console.log(personas['Linux Terminal'].prompt)
+// => I want you to act as a linux terminal. I will type commands and you will...
+```
+
+#### [<img height=14 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions@c226de5/assets/images/icons/browsers/chrome/icon16.png" title="Chrome">][web-usage][<img height=13.5 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions@c226de5/assets/images/icons/browsers/edge/icon16.png" title="Edge">][web-usage][<img height=14 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions@c226de5/assets/images/icons/browsers/firefox/icon16.png" title="Firefox">][web-usage][<img height=14 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions@c226de5/assets/images/icons/browsers/safari/icon16.png" title="Safari">][web-usage][<img height=13 src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions@c226de5/assets/images/icons/browsers/qq/3d/icon-32x33.png" title="QQ Browser">][web-usage] Web:
+
+[web-usage]: #-web
+
+```html
+<script type="module">
+    const personas = await (await fetch(
+        'https://cdn.jsdelivr.net/npm/@kudoai/ai-personas@1/dist/ai-personas.min.json'
+    )).json()
+
+    console.log(personas['Linux Terminal'].prompt)
+    // => I want you to act as a linux terminal. I will type commands and you will...
+</script>
+```
+
+#### [<img height="13" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/tampermonkey/icon28.png" title="Tampermonkey">][greasemonkey-usage][<img height="15" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/violentmonkey/icon25.png" title="Violentmonkey">][greasemonkey-usage][<img height="13" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/scriptcat/icon32.png" title="ScriptCat">][greasemonkey-usage][<img height="13" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/orangemonkey/icon16.png" title="OrangeMonkey">][greasemonkey-usage][<img height="14" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/stay/icon32.png" title="Stay">][greasemonkey-usage][<img height="13" src="https://cdn.jsdelivr.net/gh/adamlui/userscripts@2793398/assets/images/icons/userscript-managers/userscripts/icon32.png" title="Userscripts">][greasemonkey-usage] Greasemonkey:
+
+[greasemonkey-usage]: #-greasemonkey-1
+
+```js
+const personas = JSON.parse(GM_getResourceText('ai-personas'))
 
 console.log(personas['Linux Terminal'].prompt)
 // => I want you to act as a linux terminal. I will type commands and you will...
