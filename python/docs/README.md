@@ -17,6 +17,8 @@
 
 </div>
 
+<hr>
+
 > ### _1,200+ AI personas for LLMs and agents._
 
 It's just a [JSON file](https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@python-v1.3.1/data/ai-personas.json), so you can use it in any environment.
