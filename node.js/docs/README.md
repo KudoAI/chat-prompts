@@ -176,17 +176,10 @@ Your task is to:
 #### Fill variables in template prompts:
 
 ```js
-function extractPlaceholders(prompt) {
-    const matches = prompt.match(/\$\{(.*?)\}/g)
-    return matches ? [...new Set(matches.map(m => m.slice(2, -1)))] : []
-}
-
 function fillVarsInPrompt(prompt, vals = {}) {
-    return prompt.replace(/\$\{(.*?)\}/g, (_, key) => vals[key] ?? `\${${key}}`)
-}
+    return prompt.replace(/\$\{(.*?)\}/g, (_, key) => vals[key] ?? `\${${key}}`) }
 
 const prompt = personas['Node.js Automation Script Developer'].prompt,
-      placeholders = extractPlaceholders(prompt),  
       filledPrompt = fillVarsInPrompt(prompt, { taskType: 'web scraping' })
 
 console.log(filledPrompt)
