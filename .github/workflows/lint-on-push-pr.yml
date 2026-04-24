@@ -17,8 +17,11 @@ jobs:
         with:
           python-version: 3.x
 
-      - name: Install dev dependencies
+      - name: Install Py dependencies
         run: pip install -r requirements-dev.txt
+
+      - name: Install Node.js dependencies
+        run: cd node.js && npm ci
 
       - name: Lint all files
         run: nox -s lint-all
