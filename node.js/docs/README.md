@@ -1,6 +1,6 @@
 <a id="top"></a>
 
-# > <a href="https://github.com/KudoAI"><img height=23 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/kudoai.com@255f8fd/assets/images/icons/kudoai/white-on-black/icon128.png"></a> KudoAI / ai-personas
+# > <a href="https://github.com/KudoAI"><img height=33 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/kudoai.com@255f8fd/assets/images/icons/kudoai/white-on-black/icon128.png"></a> KudoAI / ai-personas
 
 <a href="https://npm-compare.com/@kudoai/ai-personas/#timeRange=ALL">
     <img height=31 src="https://img.shields.io/npm/dm/@kudoai/ai-personas?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
