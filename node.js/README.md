@@ -300,13 +300,7 @@ All contributions are very welcome!
 
 <!-- AI-PERSONAS (PYTHON) -->
 
-<details>
-    <summary><b>ai-personas (Python)</b></summary>
-    <br>
-    <a href="https://github.com/KudoAI/ai-personas/tree/main/python/#readme">
-        <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/screenshots/dataset-preview.png">
-    </a>
-</details>
+**🤖 ai-personas (Python)**
 
 > [<img height=14 width="auto" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b110c1e/assets/images/icons/python/icon32.png">][ap-py-install]
 > [Install][ap-py-install] /

@@ -267,15 +267,9 @@ All contributions are very welcome!
 [googlegpt-readme]: https://github.com/KudoAI/googlegpt/#readme
 [googlegpt-discuss]: https://github.com/KudoAI/googlegpt/discussions
 
-<!-- AI-PERSONAS (PYTHON) -->
+<!-- AI-PERSONAS (NODE.JS) -->
 
-<details>
-    <summary><b>ai-personas (Node.js)</b></summary>
-    <br>
-    <a href="https://github.com/KudoAI/ai-personas/tree/main/python/#readme">
-        <img width="555" height="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/screenshots/dataset-preview.png">
-    </a>
-</details>
+**🤖 ai-personas (Node.js)**
 
 > [<img height=14 width="auto" src="https://cdn.jsdelivr.net/gh//adamlui/js-utils@dbdea4b/assets/images/icons/runtimes/node.js/icon25x28.png">][ap-node.js-install]
 > [Install][ap-node.js-install] /
