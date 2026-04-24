@@ -58,7 +58,7 @@ jobs:
 
           # Append auto-sync trailer
           RELEASE_NOTES+="\n\n###### _Auto-synced from https://github.com/KudoAI/ai-personas/releases"
-          RELEASE_NOTES+=" by_ :robot: [kudo-sync-bot](https://github.com/kudo-sync-bot)"
+          RELEASE_NOTES+=" by [@kudo-sync-bot](https://github.com/kudo-sync-bot)_"
 
           if [ "$RELEASE_EXISTS" = false ] ; then
             echo "Creating new release..."
