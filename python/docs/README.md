@@ -125,7 +125,7 @@ print(random_prompt())
 ```py
 def fill_vars_in_template(prompt, vals={}):
     import re
-    return re.sub(r'\$\{(.*?)\}', lambda m: vals.get(m.group(1), m.group(0)), prompt)
+    return re.sub(r'\$\{(.*?)\}', lambda match: vals.get(match.group(1), match.group(0)), prompt)
 
 prompt = personas['Node.js Automation Script Developer']['prompt']
 filled_prompt = fill_vars_in_template(prompt, {'taskType': 'web scraping'})
