@@ -1,6 +1,6 @@
 <a id="top"></a>
 
-# > <a href="https://github.com/KudoAI"><img height=33 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/kudoai.com@255f8fd/assets/images/icons/kudoai/white-on-black/icon128.png"></a> KudoAI / ai-personas
+# <a href="https://github.com/KudoAI"><img height=31 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/kudoai.com@255f8fd/assets/images/icons/kudoai/white-on-black/icon128.png"></a> KudoAI / ai-personas
 
 <a href="https://pepy.tech/projects/ai-personas?versions=*">
     <img height=31 src="https://img.shields.io/pepy/dt/ai-personas?logo=weightsandbiases&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
