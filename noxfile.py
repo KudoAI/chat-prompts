@@ -1,4 +1,5 @@
-import sys
+import os, sys
+from pathlib import Path
 
 import nox
 
@@ -12,7 +13,13 @@ def lint(session): # staged files
     if files : session.run('pre-commit', 'run', '--files', *files, *session.posargs)
 @session
 def lint_all(session): # all files
+    og_cwd = Path.cwd()
     session.run('pre-commit', 'run', '--all-files', *session.posargs)
+    try:
+        os.chdir(Path(__file__).parent / 'node.js')
+        session.run('npm', 'run', 'lint:all', external=True)
+    finally:
+        os.chdir(og_cwd)
 
 @session
 def alphabetize(session, *args) : session.run(py_cmd, '-m', 'utils.alphabetize-personas', *args)
