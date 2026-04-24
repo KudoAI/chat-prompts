@@ -5,11 +5,6 @@
 
 const persona = {
 
-    extractPlaceholders(prompt) {
-        const matches = prompt.match(/\$\{(.*?)\}/g)
-        return matches ? [...new Set(matches.map(m => m.slice(2, -1)))] : []
-    },
-
     fillVars(prompt, vals = {}) {
         return prompt.replace(/\$\{(.*?)\}/g, (_, key) => vals[key] ?? `\${${key}}`) },
 
