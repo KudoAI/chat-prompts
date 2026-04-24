@@ -123,12 +123,12 @@ print(random_prompt())
 #### Fill variables in template prompts:
 
 ```py
-def fill_vars_in_prompt(prompt, vals={}):
+def fill_vars_in_template(prompt, vals={}):
     import re
     return re.sub(r'\$\{(.*?)\}', lambda m: vals.get(m.group(1), m.group(0)), prompt)
 
 prompt = personas['Node.js Automation Script Developer']['prompt']
-filled_prompt = fill_vars_in_prompt(prompt, {'taskType': 'web scraping'})
+filled_prompt = fill_vars_in_template(prompt, {'taskType': 'web scraping'})
 
 print(filled_prompt)
 

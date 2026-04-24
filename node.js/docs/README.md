@@ -176,11 +176,11 @@ Your task is to:
 #### Fill variables in template prompts:
 
 ```js
-function fillVarsInPrompt(prompt, vals = {}) {
+function fillVarsInTemplate(prompt, vals = {}) {
     return prompt.replace(/\$\{(.*?)\}/g, (_, key) => vals[key] ?? `\${${key}}`) }
 
 const prompt = personas['Node.js Automation Script Developer'].prompt,
-      filledPrompt = fillVarsInPrompt(prompt, { taskType: 'web scraping' })
+      filledPrompt = fillVarsInTemplate(prompt, { taskType: 'web scraping' })
 
 console.log(filledPrompt)
 
