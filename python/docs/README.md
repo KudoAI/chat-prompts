@@ -288,9 +288,7 @@ All contributions are very welcome!
 [ap-node.js-api-usage]: https://github.com/KudoAI/ai-personas/tree/main/node.js/#-usage
 [ap-node.js-discuss]: https://github.com/KudoAI/ai-personas/discussions
 
-
 <!-- FOOTER -->
-
 
 <a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/python-utils@b8b2932/assets/images/separators/aqua-gradient.png"></a>
 

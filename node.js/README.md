@@ -278,9 +278,7 @@ All contributions are very welcome!
 [ap-py-api-usage]: https://github.com/KudoAI/ai-personas/tree/main/python/#-usage
 [ap-py-discuss]: https://github.com/KudoAI/ai-personas/discussions
 
-
 <!-- FOOTER -->
-
 
 <a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/separators/aqua-gradient.png"></a>
 

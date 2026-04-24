@@ -210,9 +210,7 @@ All contributions are very welcome!
 [ddgpt-readme]: https://github.com/KudoAI/duckduckgpt/#readme
 [ddgpt-discuss]: https://github.com/KudoAI/duckduckgpt/discussions
 
-
 <!-- FOOTER -->
-
 
 <a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@7da7074/assets/images/separators/aqua-gradient.png"></a>
 
