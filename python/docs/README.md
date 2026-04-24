@@ -17,7 +17,7 @@
 
 It's just a [JSON file](https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@python-v1.3.1/data/ai-personas.json), so you can use it in any environment.
 
-<img src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@latest/assets/images/screenshots/dataset-preview.png">
+<img src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@python-v1.3.1/assets/images/screenshots/dataset-preview.png">
 
 <a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@7da7074/assets/images/separators/aqua-gradient.png"></a>
 
