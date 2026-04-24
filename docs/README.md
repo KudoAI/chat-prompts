@@ -1,6 +1,8 @@
 <a id="top"></a>
 
-# <a href="https://github.com/KudoAI"><img height=31 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/kudoai.com@255f8fd/assets/images/icons/kudoai/white-on-black/icon128.png"></a> KudoAI / ai-personas
+<h1>
+    <a href="https://github.com/KudoAI"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/KudoAI/kudoai.com@255f8fd/assets/images/icons/kudoai/white-on-black/icon400.png"></picture><img height=40 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/kudoai.com@255f8fd/assets/images/icons/kudoai/black-on-white/icon400.png"></a>KudoAI / ai-personas
+</h1>
 
 <a href="#">
     <img height=31 src="https://img.shields.io/badge/Downloads-3.3k-af68ff.svg?logo=weightsandbiases&logoColor=white&labelColor=464646&style=for-the-badge"></a>
