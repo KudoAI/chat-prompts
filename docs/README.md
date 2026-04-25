@@ -226,5 +226,4 @@ All contributions are very welcome!
 <a href="https://github.com/KudoAI/ai-personas/discussions">Discuss</a> /
 <a href="https://github.com/KudoAI/ai-personas/issues">Report bug</a> /
 <a href="mailto:security@tidelift.com">Report vulnerability</a> /
-<a href="https://huggingface.co">Powered by <img height=12 width="auto" src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@681e733/assets/images/icons/huggingface/icon.svg"></a> /
 <a href="#top">Back to top ↑</a>
