@@ -85,13 +85,13 @@ def update_downloads_shield(readme_path: str, downloads: int) -> bool:
 def main() -> None:
     pypi_downloads = get_pkg_downloads(PYPI_PKG, ecosystem='pypi')
     npm_downloads = get_pkg_downloads(NPM_PKG, ecosystem='npm')
-    grand_total_dls = pypi_downloads + npm_downloads
+    total_downloads = pypi_downloads + npm_downloads
     print(f'{PYPI_PKG:30} {pypi_downloads:,}')
     print(f'{NPM_PKG:30} {npm_downloads:,}')
     print('-' *45)
-    print(f'{"TOTAL DOWNLOADS":30} {grand_total_dls:,}\n')
+    print(f'{"TOTAL DOWNLOADS":30} {total_downloads:,}\n')
     print(f'Updating {README_PATH}...\n')
-    shield_updated = update_downloads_shield(README_PATH, grand_total_dls)
+    shield_updated = update_downloads_shield(README_PATH, total_downloads)
     print('Shield updated!' if shield_updated else 'No update needed.')
 
 if __name__ == '__main__' : main()
