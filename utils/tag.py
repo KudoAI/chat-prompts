@@ -10,7 +10,6 @@ log.info('Tagging prompts related to games as "gamer"...')
 added_cnt = 0
 for role, persona in personas.items():
     if 'game' in persona.get('prompt', '').lower():
-        # If the prompt contains "game", tag it as "gamer"
         if 'gamer' not in persona.get('targetAudience', []):
             persona.setdefault('targetAudience', []).append('gamer')
             added_cnt += 1
