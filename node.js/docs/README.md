@@ -332,7 +332,7 @@ All contributions are very welcome!
 [**More JavaScript utilities**][js-utils] /
 <a href="https://github.com/KudoAI/ai-personas/discussions">Discuss</a> /
 <a href="https://github.com/KudoAI/ai-personas/issues">Report bug</a> /
-<a href="mailto:security@tidelift.com">Report vulnerability</a> /
+<a href="mailto:security@kudoai.com">Report vulnerability</a> /
 <a href="#top">Back to top ↑</a>
 
 [js-utils]: https://github.com/adamlui/js-utils/#readme
