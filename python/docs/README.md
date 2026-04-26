@@ -46,7 +46,7 @@ print(ai_personas['Linux Terminal']['prompt'])
 
 _Note: Most type checkers will falsely warn_ `ai_personas` _is not subscriptable because they are incapable of analyzing runtime behavior (where the module is replaced w/ a dictionary for cleaner, direct access). You can safely suppress such warnings using_ `# type: ignore`.
 
-<br><a href="https://github.com/sponsors/KudoAI"><img src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@f83f75a/assets/images/banners/sponsor/$10/banner1660x260.png"></a>
+<br><a href="https://github.com/sponsors/KudoAI"><img src="https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions@e53b001/assets/images/banners/sponsor/$10/banner1660x260.png"></a>
 
 <hr>
 
