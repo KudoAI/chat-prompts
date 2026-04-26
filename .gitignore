@@ -3,4 +3,3 @@
 *.egg-info/
 dist/
 node_modules/
-publish.sh
