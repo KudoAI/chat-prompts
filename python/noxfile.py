@@ -51,17 +51,6 @@ def bump_major(session, no_push=True):
 
 @session
 def build(session) : clean(session) ; session.run(py_cmd, '-m', 'build') ; print('Build complete!')
-@session
-def publish(session) : session.run('bash', 'utils/publish.sh', *session.posargs)
-
-@session
-def deploy_patch(session) : bump_patch(session, no_push=False) ; build(session) ; publish(session)
-@session
-def deploy_minor(session) : bump_minor(session, no_push=False) ; build(session) ; publish(session)
-@session
-def deploy_feat(session) : deploy_minor(session)
-@session
-def deploy_major(session) : bump_major(session, no_push=False) ; build(session) ; publish(session)
 
 @session
 def clean(session, *args) : session.run(py_cmd, '-m', 'utils.clean', *args)
