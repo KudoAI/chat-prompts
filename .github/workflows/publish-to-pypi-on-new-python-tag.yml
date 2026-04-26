@@ -1,0 +1,21 @@
+name: Publish to PyPI on new python tag
+
+on:
+  push:
+    tags: ["python*"]
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/checkout@v6.0.2
+      - uses: actions/setup-python@v6.2.0
+        with:
+          python-version: 3.x
+      - run: pip install build
+      - run: cd python && python -m build
+      - uses: pypa/gh-action-pypi-publish@release/v1.14
+        with:
+          packages-dir: python/dist
