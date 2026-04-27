@@ -95,7 +95,7 @@ Repository = "https://github.com/KudoAI/ai-personas"
 
 [project.optional-dependencies]
 dev = [
-    "find-project-root>=1.0.4,<2",
+    "find-project-root>=2.0.0,<3",
     "nox>=2026.4.10",
     "pre-commit>=4.5.1,<5",
     "tomli>=2.4.1,<3",
