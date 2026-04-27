@@ -2,13 +2,12 @@ import csv, io, re
 from pathlib import Path
 from urllib.request import urlopen
 
-import find_project_root
+import emoji, find_project_root
 
 from ..lib import prompt
 from python.utils.lib import data, log
 
 prompts_csv_url = 'https://huggingface.co/datasets/fka/prompts.chat/raw/main/prompts.csv'
-
 personas_path = Path(find_project_root()) / 'data/ai-personas.json' # type: ignore
 
 log.info(f'Downloading {prompts_csv_url}...')
@@ -40,16 +39,10 @@ log.success(f'{len(personas):,} previous personas loaded!')
 
 log.info('Adding new personas...')
 added_cnt = 0
-emoji_re = re.compile(
-    '['
-        '\U0001F300-\U0001FAFF' # symbols/emoji
-        '\U00002700-\U000027BF' # dingbats
-        '\U0001F1E0-\U0001F1FF' # flags
-    ']+',
-    flags=re.UNICODE
-)
+def remove_emoji(text):
+    return ''.join(char for char in text if char not in emoji.EMOJI_DATA)
 for row in text_prompt_rows:
-    role = re.sub(r'^# |["“”‘’]', '', emoji_re.sub('', row['act'])).strip()
+    role = re.sub(r'^# |["“”‘’]', '', remove_emoji(row['act'])).strip()
     persona = {'prompt': row['prompt'].strip()}
     if row.get('for_devs', '').strip().upper() == 'TRUE':
         persona['targetAudience'] = ['devs']
