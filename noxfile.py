@@ -22,8 +22,8 @@ def lint_all(session): # all files
         os.chdir(og_cwd)
 
 @session
-def alphabetize(session, *args) : session.run(py_cmd, '-m', 'utils.alphabetize-personas', *args)
+def alphabetize(session, *args) : session.run(py_cmd, '-m', 'utils.personas.alphabetize', *args)
 @session
-def tag(session, *args) : session.run(py_cmd, '-m', 'utils.tag', *args)
+def tag(session, *args) : session.run(py_cmd, '-m', 'utils.personas.tag_target_audience', *args)
 @session
-def update(session, *args) : session.run(py_cmd, '-m', 'utils.update-personas-from-prompts-csv', *args)
+def update(session, *args) : session.run(py_cmd, '-m', 'utils.personas.update_from_hugging_face_csv', *args)

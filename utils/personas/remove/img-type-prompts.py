@@ -2,9 +2,9 @@ from pathlib import Path
 
 from python.utils.lib import data, log
 
-from ..lib import prompt
+from ...lib import prompt
 
-personas_path = Path(__file__).parent.parent.parent / 'data/ai-personas.json'
+personas_path = Path(__file__).parent.parent.parent.parent / 'data/ai-personas.json'
 
 log.info(f'Reading {personas_path}...')
 personas = data.json.read(personas_path)
