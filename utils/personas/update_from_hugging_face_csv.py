@@ -7,7 +7,7 @@ from ..lib import prompt
 from python.utils.lib import data, log
 
 prompts_csv_url = 'https://huggingface.co/datasets/fka/prompts.chat/raw/main/prompts.csv'
-output_path = Path(__file__).parent.parent.parent / 'data/ai-personas.json'
+personas_path = Path(__file__).parent.parent.parent / 'data/ai-personas.json'
 
 log.info(f'Downloading {prompts_csv_url}...')
 csv.field_size_limit(10**9) # to accommodate longass prompts
@@ -29,11 +29,11 @@ text_prompt_rows = [
 ]
 log.success(f'{len(text_prompt_rows):,} text prompts found!')
 
-log.info(f'Reading {output_path}...')
-if not output_path.exists():
-    log.error(f'Output path does not exist: {output_path}')
+log.info(f'Reading {personas_path}...')
+if not personas_path.exists():
+    log.error(f'Output path does not exist: {personas_path}')
     raise SystemExit(1)
-personas = data.json.read(output_path)
+personas = data.json.read(personas_path)
 log.success(f'{len(personas):,} previous personas loaded!')
 
 log.info('Adding new personas...')
@@ -56,7 +56,7 @@ for row in text_prompt_rows:
         added_cnt += 1
 log.success(f'Added {added_cnt:,} new personas!')
 
-log.info(f'Saving {len(personas)} personas to {output_path}...')
-data.json.write(output_path, dict(sorted(personas.items(), key = lambda item: item[0].lower())), style='compact')
+log.info(f'Saving {len(personas)} personas to {personas_path}...')
+data.json.write(personas_path, dict(sorted(personas.items(), key = lambda item: item[0].lower())), style='compact')
 
 log.success('Done!')
