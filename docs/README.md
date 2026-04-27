@@ -13,7 +13,7 @@
 <a href="https://sonarcloud.io/component_measures?metric=vulnerabilities&id=KudoAI_ai-personas">
     <img height=31 src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3DKudoAI_ai-personas%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonar&logoColor=white&labelColor=464646&label=Vulnerabilities&color=ffef00"></a>
 <a href="https://www.jsdelivr.com/package/gh/KudoAI/ai-personas?tab=stats">
-    <img alt="[jsDelivr stats]" src="https://img.shields.io/jsdelivr/gh/hm/KudoAI/ai-personas?style=for-the-badge&logo=jsdelivr&logoColor=white&label=jsDelivr%20Requests&labelColor=464646&color=2bbbd8"></a>
+    <img alt="[jsDelivr stats]" src="https://img.shields.io/jsdelivr/gh/hm/KudoAI/ai-personas?style=for-the-badge&logo=jsdelivr&logoColor=white&label=jsDelivr%20Requests&labelColor=464646&color=7bb7fc"></a>
 
 </div>
 
