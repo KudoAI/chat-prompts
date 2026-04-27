@@ -40,8 +40,7 @@ def bump_pyproject_vers(pyproject, project, new_ver):
     log.success(msgs.log_BUMPED_PROJECT_VER.format(prev_ver=project.version, **locals()))
 
     # Bump project.urls['Releases']
-    new_ver_tag = f'python-v{new_ver}'
-    changelog_url = f"{project.urls['Releases']}/tag/{new_ver_tag}"
+    changelog_url = f"{project.urls['Releases']}/tag/python-v{new_ver}"
     log.info(f'{msgs.log_UPDATING_CLOG_URL_IN} pyproject.toml...')
     pyproject['project']['urls']['Changelog'] = changelog_url
     toml.write(paths.pyproject, pyproject)
