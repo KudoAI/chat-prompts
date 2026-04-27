@@ -17,7 +17,7 @@ def line_break() : print()
 def overwrite_print(msg: str, *args, **kwargs) -> None:
     sys.stdout.write('\r' + msg.format(*args, **kwargs).ljust(terminal_width)[:terminal_width])
 def success(msg: str, *args, **kwargs) -> None : print(f'\n{colors.bg}{msg.format(*args, **kwargs)}{colors.nc}')
-def tip(msg: str, *args, **kwargs) -> None : print(f'\n{colors.bc}TIP: {msg.format(*args, **kwargs)}{colors.nc}')
+def tip(msg: str, *args, **kwargs) -> None : print(f'\n{colors.by}TIP: {msg.format(*args, **kwargs)}{colors.nc}')
 def warn(msg: str, *args, **kwargs) -> None : print(f'\n{colors.bo}WARNING: {msg.format(*args, **kwargs)}{colors.nc}')
 
 def trunc(msg: str, end: str = '\n') -> None:
