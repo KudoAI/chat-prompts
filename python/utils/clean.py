@@ -2,10 +2,12 @@ from pathlib import Path
 import shutil, sys
 from types import SimpleNamespace as sn
 
+import find_project_root
+
 from .lib import data, log
 
 def main():
-    msgs_path = Path(__file__).parent / 'data/messages.json'
+    msgs_path = Path(find_project_root()) / 'data/messages.json' # type: ignore
     msgs = sn(**{ key:val['message'] for key,val in data.json.read(msgs_path)['clean'].items() })
     targets = ['*.pyc']
     if '--py2' not in sys.argv:

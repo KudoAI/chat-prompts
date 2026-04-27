@@ -2,12 +2,14 @@ import csv, io, re
 from pathlib import Path
 from urllib.request import urlopen
 
-from ..lib import prompt
+import find_project_root
 
+from ..lib import prompt
 from python.utils.lib import data, log
 
 prompts_csv_url = 'https://huggingface.co/datasets/fka/prompts.chat/raw/main/prompts.csv'
-personas_path = Path(__file__).parent.parent.parent / 'data/ai-personas.json'
+
+personas_path = Path(find_project_root()) / 'data/ai-personas.json' # type: ignore
 
 log.info(f'Downloading {prompts_csv_url}...')
 csv.field_size_limit(10**9) # to accommodate longass prompts

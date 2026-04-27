@@ -85,7 +85,7 @@ classifiers = [
 ]
 
 [project.urls]
-Changelog = "https://github.com/KudoAI/ai-personas/releases/tag/python-v1.4.0"
+Changelog = "https://github.com/KudoAI/ai-personas/releases/tag/python-1.4.0"
 Documentation = "https://github.com/KudoAI/ai-personas/tree/main/python/#readme"
 Funding = "https://github.com/sponsors/KudoAI"
 Homepage = "https://github.com/KudoAI/ai-personas/#readme"
@@ -96,6 +96,7 @@ Repository = "https://github.com/KudoAI/ai-personas"
 
 [project.optional-dependencies]
 dev = [
+    "find-project-root>=1.0.4,<2",
     "nox>=2026.4.10",
     "pre-commit>=4.5.1,<5",
     "tomli>=2.4.1,<3",

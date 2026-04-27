@@ -1,8 +1,10 @@
 from pathlib import Path
 
+import find_project_root
+
 from python.utils.lib import data, log
 
-personas_path = Path(__file__).parent.parent.parent / 'data/ai-personas.json'
+personas_path = Path(find_project_root()) / 'data/ai-personas.json' # type: ignore
 
 log.info(f'Reading {personas_path}...')
 personas = data.json.read(personas_path)
