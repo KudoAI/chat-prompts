@@ -229,7 +229,7 @@ All contributions are very welcome!
 
 <hr>
 
-## 📜 Related
+## 🤖 Related
 
 <!-- DUCKDUCKGPT -->
 
