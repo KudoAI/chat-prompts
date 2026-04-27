@@ -10,9 +10,7 @@ def get_pkg_downloads(pkg: str, ecosystem: str = 'npm', max_retries: int = 5, ge
     from time import sleep
     from urllib.request import urlopen
     from urllib.error import HTTPError
-
     api_url = (PYPI_STATS_API_URL if ecosystem == 'pypi' else NPM_STATS_API_URL).format(pkg=pkg)
-
     for idx in range(max_retries):
         try:
             with urlopen(api_url) as resp:
@@ -28,7 +26,6 @@ def get_pkg_downloads(pkg: str, ecosystem: str = 'npm', max_retries: int = 5, ge
             else:
                 print(f'{ecosystem.upper()} Exception: {err}. Retrying in {retry_delay}s...')
             sleep(retry_delay)
-
     print(f'{ecosystem.upper()}: Failed after {max_retries} retries')
     return 0
 
