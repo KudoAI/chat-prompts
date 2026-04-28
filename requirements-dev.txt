@@ -1,4 +1,4 @@
 emoji>=2.15.0,<3
-find-project-root>=2.0.0,<3
+find-project-root>=2.1.0,<3
 nox>=2026.4.10
 pre-commit>=4.6.0,<5
