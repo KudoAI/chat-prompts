@@ -85,7 +85,7 @@ classifiers = [
 ]
 
 [project.urls]
-Changelog = "https://github.com/KudoAI/ai-personas/releases/tag/python-vpython-v1.5.0"
+Changelog = "https://github.com/KudoAI/ai-personas/releases/tag/python--v1.5.0"
 Documentation = "https://github.com/KudoAI/ai-personas/tree/main/python/#readme"
 Funding = "https://github.com/sponsors/KudoAI"
 Homepage = "https://github.com/KudoAI/ai-personas/#readme"
