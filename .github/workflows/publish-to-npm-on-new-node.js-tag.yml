@@ -2,6 +2,7 @@ name: Publish to npm on new node.js tag
 
 on:
   push:
+    branches: [main]
     tags: ["node.js*"]
   workflow_dispatch:
 
