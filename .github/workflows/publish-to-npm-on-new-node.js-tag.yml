@@ -3,6 +3,7 @@ name: Publish to npm on new node.js tag
 on:
   push:
     tags: ["node.js*"]
+  workflow_dispatch:
 
 jobs:
   publish:
