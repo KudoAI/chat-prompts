@@ -84,7 +84,7 @@ def main():
         from .lib import git
         KEY_ID = git.init_kudo_sync_bot(msgs)
         git.commit([str(paths.pyproject), str(paths.readme)],
-            f'Bumped {project.name} versions to {new_ver}',
+            f'Bumped {project.name} (Python) versions to {new_ver}',
             '-n', f'-S{KEY_ID}' if KEY_ID else ''
         )
         if args.no_push:
