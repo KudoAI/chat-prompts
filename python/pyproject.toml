@@ -7,7 +7,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ai-personas"
-version = "1.6.0"
+version = "1.7.0"
 description = "1,200+ AI personas for LLMs and agents."
 authors = [
     { name = "KudoAI", email = "contact@kudoai.com" },
@@ -85,7 +85,7 @@ classifiers = [
 ]
 
 [project.urls]
-Changelog = "https://github.com/KudoAI/ai-personas/releases/tag/python-v1.6.0"
+Changelog = "https://github.com/KudoAI/ai-personas/releases/tag/python-v1.7.0"
 Documentation = "https://github.com/KudoAI/ai-personas/tree/main/python/#readme"
 Funding = "https://github.com/sponsors/KudoAI"
 Homepage = "https://github.com/KudoAI/ai-personas/#readme"
