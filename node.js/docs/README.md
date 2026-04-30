@@ -6,8 +6,8 @@
 
 <a href="https://npm-compare.com/@kudoai/ai-personas/#timeRange=ALL">
     <img height=31 src="https://img.shields.io/npm/dm/@kudoai/ai-personas?logo=npm&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://github.com/KudoAI/ai-personas/releases/tag/node.js-v1.6.0">
-    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.6.0-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/KudoAI/ai-personas/releases/tag/node.js-v1.7.0">
+    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.7.0-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-license">
     <img height=31 src="https://img.shields.io/badge/License-CC0--1.0/MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/KudoAI/ai-personas">
@@ -23,7 +23,7 @@
 
 It's just a [JSON file](https://cdn.jsdelivr.net/npm/@kudoai/ai-personas@1.3.0/dist/ai-personas.json), so you can use it in any environment.
 
-<img src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@node.js-v1.6.0/assets/images/screenshots/dataset-preview.png">
+<img src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@node.js-v1.7.0/assets/images/screenshots/dataset-preview.png">
 
 <a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@6b0d399/assets/images/separators/aqua-gradient.png"></a>
 
