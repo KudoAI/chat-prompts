@@ -1,7 +1,7 @@
 nc = '\x1b[0m'
 hex = {
     'br': '#ff0000',  'by': '#ffff00',  'bo': '#ffa500',   'bg': '#00ff00',
-    'bw': '#ffffff',  'dg': '#008000', 'gry': '#808080',  'blk': '#000000', 'tlBG': '#008080'
+    'bw': '#ffffff',  'dg': '#008000', 'gry': '#808080',  'blk': '#000000', 'tlBG': '#00ffff'
 }
 
 def hex_to_ansi(hex_color: str) -> str:
@@ -26,5 +26,7 @@ class _Schemes:
 schemes = _Schemes()
 
 def __getattr__(hex_key: str) -> str: # add color.hex_key getters that return ANSI
-    if hex_key in hex: return hex_to_ansi(hex[hex_key])
+    if hex_key in hex:
+        ansi = hex_to_ansi(hex[hex_key])
+        return ansi.replace('[38;', '[48;') if hex_key.endswith('BG') else ansi
     raise AttributeError(f"module 'color' has no attribute '{hex_key}'")
