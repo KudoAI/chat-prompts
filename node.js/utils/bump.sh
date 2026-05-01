@@ -9,7 +9,7 @@ BW="\033[1;97m" # bright white
 
 # Determine new version to bump to
 BUMP_TYPES=("major" "minor" "patch")
-pkg_name=$(node -pe "require('./package.json').name")
+pkg_name=$(basename "$(node -pe "require('./package.json').name")")
 old_ver=$(node -pe "require('./package.json').version")
 IFS='.' read -ra subvers <<< "$old_ver" # split old_ver into subvers array
 case $1 in
