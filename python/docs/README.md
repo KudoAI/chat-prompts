@@ -6,8 +6,8 @@
 
 <a href="https://pepy.tech/projects/ai-personas?versions=*">
     <img height=31 src="https://img.shields.io/pepy/dt/ai-personas?logo=weightsandbiases&color=af68ff&logoColor=white&labelColor=464646&style=for-the-badge"></a>
-<a href="https://github.com/KudoAI/ai-personas/releases/tag/python-v1.7.1">
-    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.7.1-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
+<a href="https://github.com/KudoAI/ai-personas/releases/tag/python-v1.8.0">
+    <img height=31 src="https://img.shields.io/badge/Latest_Build-1.8.0-32fcee.svg?logo=icinga&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="#%EF%B8%8F-license">
     <img height=31 src="https://img.shields.io/badge/License-CC0--1.0/MIT-f99b27.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://www.codefactor.io/repository/github/KudoAI/ai-personas">
@@ -21,9 +21,9 @@
 
 > ### _1,200+ AI personas for LLMs and agents._
 
-It's just a [JSON file](https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@python-v1.7.1/data/ai-personas.json), so you can use it in any environment.
+It's just a [JSON file](https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@python-v1.8.0/data/ai-personas.json), so you can use it in any environment.
 
-<img src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@python-v1.7.1/assets/images/screenshots/dataset-preview.png">
+<img src="https://cdn.jsdelivr.net/gh/KudoAI/ai-personas@python-v1.8.0/assets/images/screenshots/dataset-preview.png">
 
 <a href="#"><img style="height:10px ; width:100%" src="https://cdn.jsdelivr.net/gh/adamlui/js-utils@7da7074/assets/images/separators/aqua-gradient.png"></a>
 
