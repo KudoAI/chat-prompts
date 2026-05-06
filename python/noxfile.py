@@ -7,7 +7,9 @@ py_cmd = 'py' if sys.platform.startswith('win') else 'python3'
 def session(func) : return nox.session(venv_backend='none', name=func.__name__.replace('_', '-'))(func)
 
 @session
-def dev(session) : session.run('pip', 'install', '-e', '.')
+def dev(session):
+    session.run('uv', 'sync')
+    session.run('uv', 'pip', 'install', '-e', '.')
 @session
 def test_py26(session):
     from pathlib import Path
