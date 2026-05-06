@@ -31,20 +31,20 @@ def lint_all(session): # all project files
 
 bump_cmd_args = (py_cmd, '-m', 'utils.bump')
 @session
-def bump_patch(session, no_push=True):
+def bump_patch(session, no_push=False):
     cmd_args = bump_cmd_args + ('--patch',)
     if no_push : cmd_args += ('--no-push',)
     session.run(*cmd_args, *session.posargs)
 @session
-def bump_minor(session, no_push=True):
+def bump_minor(session, no_push=False):
     cmd_args = bump_cmd_args + ('--minor',)
     if no_push : cmd_args += ('--no-push',)
     session.run(*cmd_args, *session.posargs)
 @session
-def bump_feat(session, no_push=True):
+def bump_feat(session, no_push=False):
     bump_minor(session, no_push)
 @session
-def bump_major(session, no_push=True):
+def bump_major(session, no_push=False):
     cmd_args = bump_cmd_args + ('--major',)
     if no_push : cmd_args += ('--no-push',)
     session.run(*cmd_args, *session.posargs)
