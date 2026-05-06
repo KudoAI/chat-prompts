@@ -16,3 +16,12 @@ updates:
       dev-dependencies:
         dependency-type: development
     versioning-strategy: increase
+
+  - package-ecosystem: uv
+    directory: /python
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+        dependency-type: development
+    versioning-strategy: increase
