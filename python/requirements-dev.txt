@@ -1,0 +1,6 @@
+find-project-root>=2.2.0,<3
+nox>=2026.4.10
+pre-commit>=4.5.1,<5
+tomli>=2.4.1,<3
+tomli-w>=1.2.0,<2
+uv>=0.11.10,<1
